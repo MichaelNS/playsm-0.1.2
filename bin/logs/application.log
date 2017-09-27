@@ -1,0 +1,139 @@
+2017-09-26 21:02:08 +0300 [INFO] from akka.event.slf4j.Slf4jLogger in application-akka.actor.default-dispatcher-2 - Slf4jLogger started
+2017-09-26 21:02:09 +0300 [INFO] from utils.db.TetraoPostgresDriver in main - [36m >>> binding uuid -> java.util.UUID [0m
+2017-09-26 21:02:09 +0300 [INFO] from utils.db.TetraoPostgresDriver in main - [36m >>> binding text -> java.lang.String [0m
+2017-09-26 21:02:09 +0300 [INFO] from utils.db.TetraoPostgresDriver in main - [36m >>> binding bool -> Boolean [0m
+2017-09-26 21:02:09 +0300 [INFO] from utils.db.TetraoPostgresDriver in main - [36m >>> binding _uuid -> scala.collection.Seq [0m
+2017-09-26 21:02:09 +0300 [INFO] from utils.db.TetraoPostgresDriver in main - [36m >>> binding _text -> scala.collection.Seq [0m
+2017-09-26 21:02:09 +0300 [INFO] from utils.db.TetraoPostgresDriver in main - [36m >>> binding _int8 -> scala.collection.Seq [0m
+2017-09-26 21:02:09 +0300 [INFO] from utils.db.TetraoPostgresDriver in main - [36m >>> binding _int4 -> scala.collection.Seq [0m
+2017-09-26 21:02:09 +0300 [INFO] from utils.db.TetraoPostgresDriver in main - [36m >>> binding _int2 -> scala.collection.Seq [0m
+2017-09-26 21:02:09 +0300 [INFO] from utils.db.TetraoPostgresDriver in main - [36m >>> binding _float4 -> scala.collection.Seq [0m
+2017-09-26 21:02:09 +0300 [INFO] from utils.db.TetraoPostgresDriver in main - [36m >>> binding _float8 -> scala.collection.Seq [0m
+2017-09-26 21:02:09 +0300 [INFO] from utils.db.TetraoPostgresDriver in main - [36m >>> binding _bool -> scala.collection.Seq [0m
+2017-09-26 21:02:09 +0300 [INFO] from utils.db.TetraoPostgresDriver in main - [36m >>> binding _date -> scala.collection.Seq [0m
+2017-09-26 21:02:09 +0300 [INFO] from utils.db.TetraoPostgresDriver in main - [36m >>> binding _time -> scala.collection.Seq [0m
+2017-09-26 21:02:09 +0300 [INFO] from utils.db.TetraoPostgresDriver in main - [36m >>> binding _timestamp -> scala.collection.Seq [0m
+2017-09-26 21:02:09 +0300 [INFO] from utils.db.TetraoPostgresDriver in main - [36m >>> binding inet -> com.github.tminglei.slickpg.InetString [0m
+2017-09-26 21:02:09 +0300 [INFO] from utils.db.TetraoPostgresDriver in main - [36m >>> binding macaddr -> com.github.tminglei.slickpg.MacAddrString [0m
+2017-09-26 21:02:09 +0300 [INFO] from utils.db.TetraoPostgresDriver in main - [36m >>> binding ltree -> com.github.tminglei.slickpg.LTree [0m
+2017-09-26 21:02:09 +0300 [INFO] from utils.db.TetraoPostgresDriver in main - [36m >>> binding _ltree -> scala.collection.immutable.List [0m
+2017-09-26 21:02:09 +0300 [INFO] from utils.db.TetraoPostgresDriver in main - [36m >>> binding int4range -> com.github.tminglei.slickpg.Range [0m
+2017-09-26 21:02:09 +0300 [INFO] from utils.db.TetraoPostgresDriver in main - [36m >>> binding int8range -> com.github.tminglei.slickpg.Range [0m
+2017-09-26 21:02:09 +0300 [INFO] from utils.db.TetraoPostgresDriver in main - [36m >>> binding numrange -> com.github.tminglei.slickpg.Range [0m
+2017-09-26 21:02:09 +0300 [INFO] from utils.db.TetraoPostgresDriver in main - [36m >>> binding tsrange -> com.github.tminglei.slickpg.Range [0m
+2017-09-26 21:02:09 +0300 [INFO] from utils.db.TetraoPostgresDriver in main - [36m >>> binding daterange -> com.github.tminglei.slickpg.Range [0m
+2017-09-26 21:02:09 +0300 [INFO] from utils.db.TetraoPostgresDriver in main - [36m >>> binding hstore -> scala.collection.immutable.Map [0m
+2017-09-26 21:02:09 +0300 [INFO] from utils.db.TetraoPostgresDriver in main - [36m >>> binding tsvector -> com.github.tminglei.slickpg.TsVector [0m
+2017-09-26 21:02:09 +0300 [INFO] from utils.db.TetraoPostgresDriver in main - [36m >>> binding tsquery -> com.github.tminglei.slickpg.TsQuery [0m
+2017-09-26 21:02:09 +0300 [INFO] from com.zaxxer.hikari.HikariDataSource in main - db - Started.
+2017-09-26 21:02:09 +0300 [INFO] from com.zaxxer.hikari.pool.PoolBase in db connection adder - db - Driver does not support get/set network timeout for connections. (Метод org.postgresql.jdbc.PgConnection.getNetworkTimeout() ещё не реализован)
+2017-09-26 21:02:09 +0300 [INFO] from play.api.Play in main - Application started (Prod) (no global state)
+2017-09-26 21:02:11 +0300 [INFO] from play.core.server.AkkaHttpServer in main - Listening for HTTP on /0:0:0:0:0:0:0:0:9000
+2017-09-26 21:04:09 +0300 [DEBUG] from application in application-akka.actor.default-dispatcher-36 - debugParam controllers.SmSync#syncDevice : 68  - (device=[PLEX])
+2017-09-26 21:04:09 +0300 [DEBUG] from ru.ns.tools.FileUtils$ in scala-execution-context-global-66 - debugParam ru.ns.tools.FileUtils.getDriveFromLetter : 34  - (drive2sync=[Vector(PLEX)])
+2017-09-26 21:04:09 +0300 [DEBUG] from application in scala-execution-context-global-66 - debugParam controllers.SmSync#syncDb : 83  - (device=[PLEX], label2Drive=[Map(PLEX -> C:)])
+2017-09-26 21:04:09 +0300 [DEBUG] from application in scala-execution-context-global-66 - controllers.SmSync.$anonfun = impPath.size : [5]
+2017-09-26 21:04:09 +0300 [DEBUG] from application in scala-execution-context-global-66 - [33mArrayBuffer[39m(
+  [32m"C:\\2cp"[39m,
+  [32m"C:\\comp_us_fl\\file2crypt"[39m,
+  [32m"C:\\comp_us_fl\\file2pub"[39m,
+  [32m"C:\\Downloads"[39m,
+  [32m"C:\\nswrk"[39m
+)
+2017-09-26 21:04:09 +0300 [DEBUG] from application in scala-execution-context-global-66 - mergeDrive2Db start -> path = [2cp]
+2017-09-26 21:04:09 +0300 [DEBUG] from ru.ns.tools.FileUtils$ in scala-execution-context-global-68 - ru.ns.tools.FileUtils.readDirRecursive = impPath : [C:\2cp]
+2017-09-26 21:04:09 +0300 [INFO] from application in scala-execution-context-global-66 - mergeDrive2Db done start job -> path = [2cp]   Elapsed time: 5 ms
+2017-09-26 21:04:09 +0300 [DEBUG] from application in scala-execution-context-global-66 - mergeDrive2Db start -> path = [comp_us_fl\file2crypt]
+2017-09-26 21:04:09 +0300 [INFO] from application in scala-execution-context-global-66 - mergeDrive2Db done start job -> path = [comp_us_fl\file2crypt]   Elapsed time: 1 ms
+2017-09-26 21:04:09 +0300 [DEBUG] from application in scala-execution-context-global-66 - mergeDrive2Db start -> path = [comp_us_fl\file2pub]
+2017-09-26 21:04:09 +0300 [INFO] from application in scala-execution-context-global-66 - mergeDrive2Db done start job -> path = [comp_us_fl\file2pub]   Elapsed time: 0 ms
+2017-09-26 21:04:09 +0300 [DEBUG] from application in scala-execution-context-global-66 - mergeDrive2Db start -> path = [Downloads]
+2017-09-26 21:04:09 +0300 [INFO] from application in scala-execution-context-global-66 - mergeDrive2Db done start job -> path = [Downloads]   Elapsed time: 0 ms
+2017-09-26 21:04:09 +0300 [DEBUG] from application in scala-execution-context-global-66 - mergeDrive2Db start -> path = [nswrk]
+2017-09-26 21:04:09 +0300 [INFO] from application in scala-execution-context-global-66 - mergeDrive2Db done start job -> path = [nswrk]   Elapsed time: 0 ms
+2017-09-26 21:04:09 +0300 [INFO] from application in scala-execution-context-global-66 - update last device sync = [PLEX]
+2017-09-26 21:04:09 +0300 [DEBUG] from ru.ns.tools.FileUtils$ in scala-execution-context-global-70 - ru.ns.tools.FileUtils.readDirRecursive = impPath : [C:\comp_us_fl\file2crypt]
+2017-09-26 21:04:09 +0300 [DEBUG] from ru.ns.tools.FileUtils$ in scala-execution-context-global-69 - ru.ns.tools.FileUtils.readDirRecursive = impPath : [C:\comp_us_fl\file2pub]
+2017-09-26 21:04:09 +0300 [INFO] from application in scala-execution-context-global-66 - Sync device is done = PLEX
+2017-09-26 21:04:09 +0300 [DEBUG] from ru.ns.tools.FileUtils$ in scala-execution-context-global-66 - ru.ns.tools.FileUtils.readDirRecursive = impPath : [C:\Downloads]
+2017-09-26 21:04:09 +0300 [INFO] from application in scala-execution-context-global-68 - mergeDrive2Db end -> path = [2cp]   Elapsed time: 593 ms
+2017-09-26 21:04:09 +0300 [INFO] from application in scala-execution-context-global-70 - mergeDrive2Db end -> path = [comp_us_fl\file2crypt]   Elapsed time: 588 ms
+2017-09-26 21:04:09 +0300 [DEBUG] from application in scala-execution-context-global-70 - mergeDrive2Db complete [589]   path = [comp_us_fl\file2crypt]
+2017-09-26 21:04:09 +0300 [DEBUG] from ru.ns.tools.FileUtils$ in scala-execution-context-global-70 - ru.ns.tools.FileUtils.readDirRecursive = impPath : [C:\nswrk]
+2017-09-26 21:04:09 +0300 [DEBUG] from application in scala-execution-context-global-68 - mergeDrive2Db complete [594]   path = [2cp]
+2017-09-26 21:04:09 +0300 [INFO] from application in scala-execution-context-global-69 - mergeDrive2Db end -> path = [comp_us_fl\file2pub]   Elapsed time: 567 ms
+2017-09-26 21:04:09 +0300 [DEBUG] from application in scala-execution-context-global-69 - mergeDrive2Db complete [567]   path = [comp_us_fl\file2pub]
+2017-09-26 21:04:09 +0300 [INFO] from application in scala-execution-context-global-69 - Updated device PLEX
+2017-09-26 21:04:10 +0300 [DEBUG] from application in scala-execution-context-global-69 - mergeDrive2Db -> path = [comp_us_fl\file2pub]  hSmBoFileCard.size = [216]  rowSeq.size = [216]   Elapsed time: 694 ms
+2017-09-26 21:04:10 +0300 [DEBUG] from application in scala-execution-context-global-68 - mergeDrive2Db -> path = [2cp]  hSmBoFileCard.size = [143]  rowSeq.size = [143]   Elapsed time: 765 ms
+2017-09-26 21:04:10 +0300 [DEBUG] from application in scala-execution-context-global-68 - delFromDb - path = [2cp]   idDb.size = [143]  idDevice.size = [143]
+2017-09-26 21:04:10 +0300 [DEBUG] from application in scala-execution-context-global-68 - controllers.SmSync.delFromDb = idDb diff idDevice : [List()]
+2017-09-26 21:04:10 +0300 [INFO] from application in scala-execution-context-global-68 - delFromDb - is done, path = [2cp]   Elapsed time: 7 ms
+2017-09-26 21:04:10 +0300 [DEBUG] from application in scala-execution-context-global-69 - delFromDb - path = [comp_us_fl\file2pub]   idDb.size = [216]  idDevice.size = [216]
+2017-09-26 21:04:10 +0300 [DEBUG] from application in scala-execution-context-global-69 - controllers.SmSync.delFromDb = idDb diff idDevice : [List()]
+2017-09-26 21:04:10 +0300 [INFO] from application in scala-execution-context-global-69 - delFromDb - is done, path = [comp_us_fl\file2pub]   Elapsed time: 2 ms
+2017-09-26 21:04:10 +0300 [DEBUG] from application in scala-execution-context-global-69 - Updated key 53D071F16535C61F982BBD467D5A5BABBD4A5789
+2017-09-26 21:04:10 +0300 [DEBUG] from application in scala-execution-context-global-69 - mergeDrive2Db -> path = [comp_us_fl\file2crypt]  hSmBoFileCard.size = [1250]  rowSeq.size = [1250]   Elapsed time: 988 ms
+2017-09-26 21:04:10 +0300 [DEBUG] from application in scala-execution-context-global-69 - delFromDb - path = [comp_us_fl\file2crypt]   idDb.size = [1250]  idDevice.size = [1250]
+2017-09-26 21:04:10 +0300 [DEBUG] from application in scala-execution-context-global-69 - controllers.SmSync.delFromDb = idDb diff idDevice : [List()]
+2017-09-26 21:04:10 +0300 [INFO] from application in scala-execution-context-global-69 - delFromDb - is done, path = [comp_us_fl\file2crypt]   Elapsed time: 10 ms
+2017-09-26 21:04:10 +0300 [INFO] from application in scala-execution-context-global-70 - mergeDrive2Db end -> path = [nswrk]   Elapsed time: 746 ms
+2017-09-26 21:04:10 +0300 [DEBUG] from application in scala-execution-context-global-70 - mergeDrive2Db complete [746]   path = [nswrk]
+2017-09-26 21:04:10 +0300 [INFO] from application in scala-execution-context-global-66 - mergeDrive2Db end -> path = [Downloads]   Elapsed time: 949 ms
+2017-09-26 21:04:10 +0300 [DEBUG] from application in scala-execution-context-global-66 - mergeDrive2Db complete [949]   path = [Downloads]
+2017-09-26 21:04:11 +0300 [DEBUG] from application in scala-execution-context-global-69 - mergeDrive2Db -> path = [nswrk]  hSmBoFileCard.size = [2359]  rowSeq.size = [2354]   Elapsed time: 1104 ms
+2017-09-26 21:04:11 +0300 [DEBUG] from application in scala-execution-context-global-66 - Updated key 08D575C9341E26AD129749F1E63B492335F47FEC
+2017-09-26 21:04:11 +0300 [DEBUG] from application in scala-execution-context-global-66 - Updated key 243B033E7E1159C990C78DCF3FBBFEF88EEA1AB9
+2017-09-26 21:04:11 +0300 [DEBUG] from application in scala-execution-context-global-66 - Updated key 74CBE34A7452B128F9F5F8F2FDFE5681F525F64A
+2017-09-26 21:04:11 +0300 [DEBUG] from application in scala-execution-context-global-66 - Updated key A55E0A0BE8BCEFD6685C0F8B1607864C92E1BD78
+2017-09-26 21:04:11 +0300 [DEBUG] from application in scala-execution-context-global-66 - Inserted FC = 1E6DC63E92F465F674B80C2CC7DED9183C9A5DC2   SmFileCardRow(1E6DC63E92F465F674B80C2CC7DED9183C9A5DC2,PLEX,:\nswrk\ideaProjects\play\playSM\app\views,dirs_fc.scala.html,Some(html),2017-09-20T21:04:02+03:00,2017-09-20T21:23:30+03:00,Some(677),Some(text/html),None,None,None)
+2017-09-26 21:04:11 +0300 [DEBUG] from application in scala-execution-context-global-69 - delFromDb - path = [nswrk]   idDb.size = [2354]  idDevice.size = [2359]
+2017-09-26 21:04:11 +0300 [DEBUG] from application in scala-execution-context-global-69 - controllers.SmSync.delFromDb = idDb diff idDevice : [List(7C9686E58C1F24452C15910BA22DA77DCBABC4CF)]
+2017-09-26 21:04:11 +0300 [INFO] from application in scala-execution-context-global-69 - delFromDb - is done, path = [nswrk]   Elapsed time: 29 ms
+2017-09-26 21:04:11 +0300 [DEBUG] from application in scala-execution-context-global-69 - Updated key 274F8752C6618631A0794CD22E425AEF8D35A31A
+2017-09-26 21:04:11 +0300 [DEBUG] from application in scala-execution-context-global-70 - Updated key 06526E55A2B139584674975ECA39A968456CB76F
+2017-09-26 21:04:11 +0300 [DEBUG] from application in scala-execution-context-global-66 - Updated key 41CD8DC5EC289ECD24E9012ADECA8BE34E7ABF06
+2017-09-26 21:04:11 +0300 [DEBUG] from application in scala-execution-context-global-66 - Updated key 371F7D219DF3808DC75F2CB204E9C1FF45615C9A
+2017-09-26 21:04:11 +0300 [DEBUG] from application in scala-execution-context-global-70 - Updated key 3FF7540F03E1EC7884D5ED0C3973540237499718
+2017-09-26 21:04:11 +0300 [DEBUG] from application in scala-execution-context-global-68 - Updated key 95BDC9B644DF70141969B81B81DE2AC674E98647
+2017-09-26 21:04:11 +0300 [DEBUG] from application in scala-execution-context-global-68 - Updated key EF2EB3A4FB03A25AC460632C692A2769AEC336C1
+2017-09-26 21:04:11 +0300 [DEBUG] from application in scala-execution-context-global-68 - Updated key 11742269528291C73839AEA70AC055A19A5DE97E
+2017-09-26 21:04:11 +0300 [DEBUG] from application in scala-execution-context-global-68 - Updated key 8D104A16A3F931EAFC19B786103FB988AD565196
+2017-09-26 21:04:11 +0300 [DEBUG] from application in scala-execution-context-global-70 - Updated key 62646E95C9DE24CCC8B2E6DB09F2F53B589BD4A8
+2017-09-26 21:04:11 +0300 [DEBUG] from application in scala-execution-context-global-68 - Updated key 808938D58ED33B231AB04620AC4463B7BC91C272
+2017-09-26 21:04:11 +0300 [DEBUG] from application in scala-execution-context-global-68 - Updated key 3436894525F9EFFE27422B2016784F756CC38BAC
+2017-09-26 21:04:11 +0300 [DEBUG] from application in scala-execution-context-global-68 - Updated key 4712647CF1E5A0EE5FBBF51CA049D8E8E02C5E98
+2017-09-26 21:04:11 +0300 [DEBUG] from application in scala-execution-context-global-70 - Updated key 597644FF0BA21A46C2AD91A36A2EFFCCF7CF64A8
+2017-09-26 21:04:11 +0300 [DEBUG] from application in scala-execution-context-global-69 - Inserted FC = 7FE05C94DC1AF7070D35E06009B8637639442D8A   SmFileCardRow(7FE05C94DC1AF7070D35E06009B8637639442D8A,PLEX,:\nswrk\ideaProjects\play\playSM_prev\app\views,dirs_fc.scala.html,Some(html),2017-09-21T21:41:53+03:00,2017-09-20T21:23:30+03:00,Some(677),Some(text/html),None,None,None)
+2017-09-26 21:04:11 +0300 [DEBUG] from application in scala-execution-context-global-69 - Updated key 706BDA2DC986B69B855FFC221DD4416F2BC56C38
+2017-09-26 21:04:11 +0300 [DEBUG] from application in scala-execution-context-global-68 - Inserted FC = A9AA6EA09A8217CE6AD41B2F99841E30B4461B29   SmFileCardRow(A9AA6EA09A8217CE6AD41B2F99841E30B4461B29,PLEX,:\nswrk\ideaProjects\play\playSM_run,playSM-assembly-0.1.2.jar,Some(jar),2017-09-26T20:29:50+03:00,2017-09-26T20:33:32+03:00,Some(50284973),Some(null),None,None,None)
+2017-09-26 21:04:11 +0300 [DEBUG] from application in scala-execution-context-global-68 - Inserted FC = 957DB18A303B5AE23451135F9ABCEAA90E1B01B1   SmFileCardRow(957DB18A303B5AE23451135F9ABCEAA90E1B01B1,PLEX,:\nswrk\ideaProjects\play\playSM_run\universal\scripts\scripts,playsm,None,2017-09-26T20:55:58+03:00,2017-09-26T20:54:50+03:00,Some(13855),Some(null),None,None,None)
+2017-09-26 21:04:11 +0300 [DEBUG] from application in scala-execution-context-global-68 - Inserted FC = ED074562C34912A8E2F736507ACF37BD22A1A2E5   SmFileCardRow(ED074562C34912A8E2F736507ACF37BD22A1A2E5,PLEX,:\nswrk\ideaProjects\play\playSM_run\universal,playsm-0.1.2.zip,Some(zip),2017-09-26T20:55:58+03:00,2017-09-26T20:54:53+03:00,Some(49176746),Some(application/x-zip-compressed),None,None,None)
+2017-09-26 21:04:11 +0300 [DEBUG] from application in scala-execution-context-global-68 - Updated key 6940DACF8A874DEC1C0774331E15E5166C1F5CA1
+2017-09-26 21:04:11 +0300 [DEBUG] from application in scala-execution-context-global-68 - Inserted FC = 47C8E87C1627093DB81E9323600D73EA97EC2C6D   SmFileCardRow(47C8E87C1627093DB81E9323600D73EA97EC2C6D,PLEX,:\nswrk\ideaProjects\play\playSM_run\universal\scripts\scripts,playsm.bat,Some(bat),2017-09-26T20:55:58+03:00,2017-09-26T20:54:50+03:00,Some(9135),Some(null),None,None,None)
+2017-09-26 21:04:11 +0300 [DEBUG] from application in scala-execution-context-global-68 - del [1] row , id = [7C9686E58C1F24452C15910BA22DA77DCBABC4CF]
+2017-09-26 21:04:11 +0300 [DEBUG] from application in scala-execution-context-global-68 - mergeDrive2Db -> path = [Downloads]  hSmBoFileCard.size = [6716]  rowSeq.size = [6716]   Elapsed time: 1678 ms
+2017-09-26 21:04:11 +0300 [DEBUG] from application in scala-execution-context-global-68 - delFromDb - path = [Downloads]   idDb.size = [6716]  idDevice.size = [6716]
+2017-09-26 21:04:11 +0300 [DEBUG] from application in scala-execution-context-global-68 - controllers.SmSync.delFromDb = idDb diff idDevice : [List()]
+2017-09-26 21:04:11 +0300 [INFO] from application in scala-execution-context-global-68 - delFromDb - is done, path = [Downloads]   Elapsed time: 16 ms
+2017-09-26 21:21:32 +0300 [DEBUG] from application in application-akka.actor.default-dispatcher-11 - controllers.SmSync.$anonfun = lstAll : [List(PLEX, Acer)]
+2017-09-26 21:21:32 +0300 [DEBUG] from application in application-akka.actor.default-dispatcher-11 - controllers.SmSync.$anonfun = lstDist : [List(PLEX, Acer)]
+2017-09-26 21:21:32 +0300 [DEBUG] from application in scala-execution-context-global-108 - [33mList[39m(
+  [33mSmDeviceRow[39m([32m10[39m, [32m"Acer"[39m, 2017-09-16T14:14:39.825+03:00),
+  [33mSmDeviceRow[39m([32m6[39m, [32m"back_hd_01"[39m, 2017-09-18T21:14:20.196+03:00),
+  [33mSmDeviceRow[39m([32m7[39m, [32m"back_hd_02"[39m, 2017-09-18T20:59:39.055+03:00),
+  [33mSmDeviceRow[39m([32m8[39m, [32m"GRMCPRXFRER"[39m, 2017-06-14T22:09:28.309+03:00),
+  [33mSmDeviceRow[39m([32m3[39m, [32m"KB"[39m, 2017-09-16T13:11:56.897+03:00),
+  [33mSmDeviceRow[39m([32m2[39m, [32m"PLEX"[39m, 2017-09-26T21:04:09.903+03:00),
+  [33mSmDeviceRow[39m([32m9[39m, [32m"SYSTEM RESERVED"[39m, 2017-06-11T12:08:32.018+03:00),
+  [33mSmDeviceRow[39m([32m4[39m, [32m"wd"[39m, 2017-09-09T22:03:57.252+03:00),
+  [33mSmDeviceRow[39m([32m5[39m, [32m"WD_Green"[39m, 2017-05-28T15:57:52.419+03:00)
+)
+2017-09-26 21:21:32 +0300 [DEBUG] from application in scala-execution-context-global-108 - controllers.SmSync.$anonfun = cFileStore.name : [PLEX]
+2017-09-26 21:21:32 +0300 [INFO] from application in scala-execution-context-global-108 - Device [PLEX] already exists
+2017-09-26 21:21:32 +0300 [DEBUG] from application in scala-execution-context-global-108 - controllers.SmSync.$anonfun = cFileStore.name : [Acer]
+2017-09-26 21:21:32 +0300 [INFO] from application in scala-execution-context-global-108 - Device [Acer] already exists
+2017-09-26 21:21:58 +0300 [INFO] from play.core.server.AkkaHttpServer in Thread-10 - Stopping server...
+2017-09-26 21:21:58 +0300 [INFO] from akka.actor.CoordinatedShutdown in application-akka.actor.default-dispatcher-53 - Starting coordinated shutdown from JVM shutdown hook
+2017-09-26 21:21:58 +0300 [INFO] from com.zaxxer.hikari.pool.HikariPool in application-akka.actor.default-dispatcher-59 - db - Close initiated...
+2017-09-26 21:21:58 +0300 [INFO] from com.zaxxer.hikari.pool.HikariPool in application-akka.actor.default-dispatcher-59 - db - Closed.

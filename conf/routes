@@ -1,0 +1,49 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+GET         /                                                    controllers.SmApplication.smIndex
+GET         /deviceIndex/:device                                 controllers.SmApplication.deviceIndex(device)
+GET         /debugQry/:device                                    controllers.SmApplication.debugQry(device)
+
++ nocsrf
+POST        /refreshDevice                                       controllers.SmSync.refreshDevice
++ nocsrf
+POST        /syncDevice/:device                                  controllers.SmSync.syncDevice(device: String)
++ nocsrf
+POST        /calcCRC/:device                                     controllers.SmSync.calcCRC(device: String)
+
+GET         /fc/byDevice/:device                                 controllers.SmApplication.getByDevice(device: String)
+GET         /fc/getByDeviceByLastModifDate/:device               controllers.SmApplication.getByDeviceByLastModifDate(device: String)
+GET         /fc/listStoreNameAndCnt                              controllers.SmApplication.listStoreNameAndCnt
+
+GET         /cntFilesWithoutSha1ByDevice/:device                 controllers.SmReport.cntFilesWithoutSha1ByDevice(device: String)
+GET         /listFilesWithoutSha1ByDevice/:device                controllers.SmReport.listFilesWithoutSha1ByDevice(device: String)
+GET         /checkBackUp/:device                                 controllers.SmReport.checkBackUp(device: String)
+GET         /checkDuplicates/:device                             controllers.SmReport.checkDuplicates(device: String)
+GET         /getFcByDeviceSha1/:device/:sha1                     controllers.SmReport.getFcByDeviceSha1(device: String, sha1: String)
+GET         /lstDirByDevice/:device/:maxFiles                    controllers.SmReport.lstDirByDevice(device: String, maxFiles: Int)
+
+GET         /listCategoryAndCnt                                  controllers.SmCategory.listCategoryAndCnt
+GET         /listDescriptionAndCnt                               controllers.SmCategory.listDescriptionAndCnt(categoryType: String)
+
+
+GET         /listPathByDescription                               controllers.SmMove.listPathByDescription(categoryType: String, description: String)
++ nocsrf
+POST        /createJobToMove                                     controllers.SmMove.createJobToMove(categoryType: String, description: String, device: String, path: String)
++ nocsrf
+POST        /delJobToMove                                        controllers.SmMove.delJobToMove(categoryType: String, description: String, device: String, path: String)
+
++ nocsrf
+POST        /moveAllDevices                                      controllers.SmMove.moveAllDevices
+
+
++ nocsrf
+POST        /propagateCategoryType                               controllers.SmCategory.propagateCategoryType
++ nocsrf
+POST        /propagateCategoryTypeAndDescription                 controllers.SmCategory.propagateCategoryTypeAndDescription
+GET         /listFcWithoutCatByLastDate                          controllers.SmCategory.listFcWithoutCatByLastDate
+GET         /listDirWithoutCatByParent/:isBegins/:device         controllers.SmCategory.listDirWithoutCatByParent(device: String, isBegins: Boolean)
++ nocsrf
+POST        /setCategoryAndDescription/:isBegins/:fParent        controllers.SmCategory.assignCategoryAndDescription(fParent: String, isBegins: Boolean)
+
+GET         /versionedAssets/*file                               controllers.Assets.versioned(file)
