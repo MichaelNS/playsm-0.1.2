@@ -19,8 +19,10 @@ GET         /fc/listStoreNameAndCnt                              controllers.SmA
 GET         /cntFilesWithoutSha1ByDevice/:device                 controllers.SmReport.cntFilesWithoutSha1ByDevice(device: String)
 GET         /listFilesWithoutSha1ByDevice/:device                controllers.SmReport.listFilesWithoutSha1ByDevice(device: String)
 GET         /checkBackUp/:device                                 controllers.SmReport.checkBackUp(device: String)
+GET         /checkBackAllFiles                                   controllers.SmReport.checkBackAllFiles
 GET         /checkDuplicates/:device                             controllers.SmReport.checkDuplicates(device: String)
 GET         /getFcByDeviceSha1/:device/:sha1                     controllers.SmReport.getFcByDeviceSha1(device: String, sha1: String)
+GET         /explorerDevice                                      controllers.SmReport.explorerDevice(device: String, path: String, depth: Int)
 GET         /lstDirByDevice/:device/:maxFiles                    controllers.SmReport.lstDirByDevice(device: String, maxFiles: Int)
 
 GET         /listCategoryAndCnt                                  controllers.SmCategory.listCategoryAndCnt
@@ -28,8 +30,10 @@ GET         /listDescriptionAndCnt                               controllers.SmC
 
 
 GET         /listPathByDescription                               controllers.SmMove.listPathByDescription(categoryType: String, description: String)
+GET         /listAllPathsByLstCrc                                controllers.SmMove.listAllPathsByLstCrc(fParent: String)
+
 + nocsrf
-POST        /createJobToMove                                     controllers.SmMove.createJobToMove(categoryType: String, description: String, device: String, path: String)
+POST        /createJobToMove                                     controllers.SmMove.createJobToMove(categoryType: String, description: String, device: String, oldPath: String)
 + nocsrf
 POST        /delJobToMove                                        controllers.SmMove.delJobToMove(categoryType: String, description: String, device: String, path: String)
 
@@ -37,13 +41,12 @@ POST        /delJobToMove                                        controllers.SmM
 POST        /moveAllDevices                                      controllers.SmMove.moveAllDevices
 
 
-+ nocsrf
-POST        /propagateCategoryType                               controllers.SmCategory.propagateCategoryType
-+ nocsrf
-POST        /propagateCategoryTypeAndDescription                 controllers.SmCategory.propagateCategoryTypeAndDescription
 GET         /listFcWithoutCatByLastDate                          controllers.SmCategory.listFcWithoutCatByLastDate
 GET         /listDirWithoutCatByParent/:isBegins/:device         controllers.SmCategory.listDirWithoutCatByParent(device: String, isBegins: Boolean)
 + nocsrf
 POST        /setCategoryAndDescription/:isBegins/:fParent        controllers.SmCategory.assignCategoryAndDescription(fParent: String, isBegins: Boolean)
+
++ nocsrf
+POST        /convertDeviceIdBatch                                controllers.SmMigrateDb.convertDeviceIdBatch(device)
 
 GET         /versionedAssets/*file                               controllers.Assets.versioned(file)

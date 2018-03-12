@@ -7,7 +7,9 @@ DROP TABLE IF EXISTS SM_DEVICE CASCADE;
 
 CREATE TABLE SM_DEVICE (
   "ID" serial PRIMARY KEY,
+  "NAME" VARCHAR NOT NULL,
   "LABEL" VARCHAR NOT NULL,
+  "UID" VARCHAR NOT NULL,
   "SYNC_DATE" timestamp with time zone not null
 );
 
@@ -26,20 +28,12 @@ CREATE TABLE SM_FILE_CARD (
   "F_LAST_MODIFIED_DATE" timestamp with time zone not null,
   "F_SIZE" BIGINT,
   "F_MIME_TYPE_JAVA" VARCHAR,
-  "SHA1" VARCHAR,
-  "CATEGORY_TYPE" VARCHAR,
-  "DESCRIPTION" VARCHAR
+  "SHA1" VARCHAR
 );
 
 CREATE INDEX sha1_idx
   ON public.sm_file_card USING btree
   ("SHA1" COLLATE pg_catalog."default" varchar_pattern_ops ASC NULLS LAST)
-WITH (FILLFACTOR=100)
-TABLESPACE pg_default;
-
-CREATE INDEX category_idx
-  ON public.sm_file_card USING btree
-  ("CATEGORY_TYPE" COLLATE pg_catalog."default" varchar_pattern_ops ASC NULLS LAST)
 WITH (FILLFACTOR=100)
 TABLESPACE pg_default;
 
@@ -55,11 +49,6 @@ CREATE INDEX last_modified_idx
 WITH (FILLFACTOR=100)
 TABLESPACE pg_default;
 
-CREATE INDEX description_idx
-  ON public.sm_file_card USING btree
-  ("DESCRIPTION" DESC NULLS LAST)
-WITH (FILLFACTOR=100)
-TABLESPACE pg_default;
 
 
 
@@ -70,6 +59,13 @@ CREATE TABLE SM_PATH_MOVE (
   "PATH_TO" VARCHAR NOT NULL
 );
 
+CREATE TABLE SM_CATEGORY_FC (
+  "ID"            VARCHAR,
+  "F_NAME"        VARCHAR,
+  "CATEGORY_TYPE" VARCHAR,
+  "DESCRIPTION"   VARCHAR,
+  PRIMARY KEY ("ID", "F_NAME")
+);
 
 
 GRANT ALL PRIVILEGES ON ALL TABLES IN SCHEMA public TO sm_user;
