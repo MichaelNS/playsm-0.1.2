@@ -58,6 +58,8 @@ POST        /convertDeviceIdBatch                                controllers.SmM
 + nocsrf
 POST        /apply-rules-set-cathegory                           controllers.SmCategory.applyRulesSetCategory
 
-GET         /view                                                controllers.SmView.viewStorage(device: String)
+GET         /view-storage                                        controllers.SmView.viewStorage(device: String)
+GET         /open-file                                           controllers.SmView.viewFile(sha256: Option[String])
+GET         /view-file                                           controllers.SmView.openFile(mountPoint: String, fullPath: String, name: String, mimeType: Option[String])
 
 GET         /versionedAssets/*file                               controllers.Assets.versioned(file)
