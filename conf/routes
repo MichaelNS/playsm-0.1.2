@@ -25,6 +25,7 @@ GET         /cntFilesWithoutSha256ByDevice/:device               controllers.SmR
 GET         /listFilesWithoutSha256ByDevice/:device              controllers.SmReport.listFilesWithoutSha256ByDevice(device: String)
 GET         /checkBackUp/:device                                 controllers.SmReport.checkBackUp(device: String)
 GET         /checkBackAllFiles                                   controllers.SmReport.checkBackAllFiles
+GET         /checkBackFilesLastYear                              controllers.SmReport.checkBackFilesLastYear
 GET         /checkDuplicates/:device                             controllers.SmReport.checkDuplicates(device: String)
 GET         /getFcByDeviceSha256/:device/:sha256                 controllers.SmReport.getFcByDeviceSha256(device: String, sha256: String)
 GET         /explorerDevice                                      controllers.SmReport.explorerDevice(device: String, path: String, depth: Int)
@@ -58,8 +59,14 @@ POST        /convertDeviceIdBatch                                controllers.SmM
 + nocsrf
 POST        /apply-rules-set-cathegory                           controllers.SmCategory.applyRulesSetCategory
 
+#view-file
 GET         /view-storage                                        controllers.SmView.viewStorage(device: String)
-GET         /open-file                                           controllers.SmView.viewFile(sha256: Option[String])
-GET         /view-file                                           controllers.SmView.openFile(mountPoint: String, fullPath: String, name: String, mimeType: Option[String])
+GET         /view-file                                           controllers.SmView.viewFile(sha256: Option[String])
 
-GET         /versionedAssets/*file                               controllers.Assets.versioned(file)
+GET         /viewPathBySha256                                    controllers.SmView.viewPathBySha256(sha256: String)
+
+#search
+GET         /search-form                                         controllers.SmSearch.queryForm
+GET         /search-by-file-name                                 controllers.SmSearch.byFileName(name: String, limit: Int ?= 50)
+
+GET         /assets/*file                                        controllers.Assets.versioned(path="/public", file: Asset)
