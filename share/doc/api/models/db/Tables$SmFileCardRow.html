@@ -172,13 +172,13 @@
         <span class="kind">case class</span>
       </span>
       <span class="symbol">
-        <span class="name">SmFileCardRow</span><span class="params">(<span name="id">id: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="storeName">storeName: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="fParent">fParent: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="fName">fName: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="fExtension">fExtension: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>] = <span class="symbol">None</span></span>, <span name="fCreationDate">fCreationDate: <span class="extype" name="java.time.OffsetDateTime">OffsetDateTime</span></span>, <span name="fLastModifiedDate">fLastModifiedDate: <span class="extype" name="java.time.OffsetDateTime">OffsetDateTime</span></span>, <span name="fSize">fSize: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Long">Long</span>] = <span class="symbol">None</span></span>, <span name="fMimeTypeJava">fMimeTypeJava: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>] = <span class="symbol">None</span></span>, <span name="sha1">sha1: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>] = <span class="symbol">None</span></span>)</span><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+        <span class="name">SmFileCardRow</span><span class="params">(<span name="id">id: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="storeName">storeName: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="fParent">fParent: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="fName">fName: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="fExtension">fExtension: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>] = <span class="symbol">None</span></span>, <span name="fCreationDate">fCreationDate: <span class="extype" name="java.time.LocalDateTime">LocalDateTime</span></span>, <span name="fLastModifiedDate">fLastModifiedDate: <span class="extype" name="java.time.LocalDateTime">LocalDateTime</span></span>, <span name="fSize">fSize: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Long">Long</span>] = <span class="symbol">None</span></span>, <span name="fMimeTypeJava">fMimeTypeJava: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>] = <span class="symbol">None</span></span>, <span name="sha256">sha256: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>] = <span class="symbol">None</span></span>, <span name="fNameLc">fNameLc: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
       </span>
       </h4>
 
       
           <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>Entity class storing rows of table SmFileCard
-</p></div><dl class="paramcmts block"><dt class="param">id</dt><dd class="cmt"><p>Database column ID SqlType(varchar), PrimaryKey</p></dd><dt class="param">storeName</dt><dd class="cmt"><p>Database column STORE_NAME SqlType(varchar)</p></dd><dt class="param">fParent</dt><dd class="cmt"><p>Database column F_PARENT SqlType(varchar)</p></dd><dt class="param">fName</dt><dd class="cmt"><p>Database column F_NAME SqlType(varchar)</p></dd><dt class="param">fExtension</dt><dd class="cmt"><p>Database column F_EXTENSION SqlType(varchar), Default(None)</p></dd><dt class="param">fCreationDate</dt><dd class="cmt"><p>Database column F_CREATION_DATE SqlType(timestamptz)</p></dd><dt class="param">fLastModifiedDate</dt><dd class="cmt"><p>Database column F_LAST_MODIFIED_DATE SqlType(timestamptz)</p></dd><dt class="param">fSize</dt><dd class="cmt"><p>Database column F_SIZE SqlType(int8), Default(None)</p></dd><dt class="param">fMimeTypeJava</dt><dd class="cmt"><p>Database column F_MIME_TYPE_JAVA SqlType(varchar), Default(None)</p></dd><dt class="param">sha1</dt><dd class="cmt"><p>Database column SHA1 SqlType(varchar), Default(None)</p></dd></dl><div class="toggleContainer block">
+</p></div><dl class="paramcmts block"><dt class="param">id</dt><dd class="cmt"><p>Database column ID SqlType(varchar), PrimaryKey</p></dd><dt class="param">storeName</dt><dd class="cmt"><p>Database column STORE_NAME SqlType(varchar)</p></dd><dt class="param">fParent</dt><dd class="cmt"><p>Database column F_PARENT SqlType(varchar)</p></dd><dt class="param">fName</dt><dd class="cmt"><p>Database column F_NAME SqlType(varchar)</p></dd><dt class="param">fExtension</dt><dd class="cmt"><p>Database column F_EXTENSION SqlType(varchar), Default(None)</p></dd><dt class="param">fCreationDate</dt><dd class="cmt"><p>Database column F_CREATION_DATE SqlType(timestamp)</p></dd><dt class="param">fLastModifiedDate</dt><dd class="cmt"><p>Database column F_LAST_MODIFIED_DATE SqlType(timestamp)</p></dd><dt class="param">fSize</dt><dd class="cmt"><p>Database column F_SIZE SqlType(int8), Default(None)</p></dd><dt class="param">fMimeTypeJava</dt><dd class="cmt"><p>Database column F_MIME_TYPE_JAVA SqlType(varchar), Default(None)</p></dd><dt class="param">sha256</dt><dd class="cmt"><p>Database column SHA256 SqlType(varchar), Default(None)</p></dd></dl><div class="toggleContainer block">
           <span class="toggle">
             Linear Supertypes
           </span>
@@ -229,9 +229,9 @@
         <div id="constructors" class="members">
               <h3>Instance Constructors</h3>
               <ol><li name="models.db.Tables.SmFileCardRow#&lt;init&gt;" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="&lt;init&gt;(id:String,storeName:String,fParent:String,fName:String,fExtension:Option[String],fCreationDate:java.time.OffsetDateTime,fLastModifiedDate:java.time.OffsetDateTime,fSize:Option[Long],fMimeTypeJava:Option[String],sha1:Option[String]):Tables.this.SmFileCardRow"></a><a id="&lt;init&gt;:SmFileCardRow"></a>
+      <a id="&lt;init&gt;(id:String,storeName:String,fParent:String,fName:String,fExtension:Option[String],fCreationDate:java.time.LocalDateTime,fLastModifiedDate:java.time.LocalDateTime,fSize:Option[Long],fMimeTypeJava:Option[String],sha256:Option[String],fNameLc:String):Tables.this.SmFileCardRow"></a><a id="&lt;init&gt;:SmFileCardRow"></a>
       <span class="permalink">
-      <a href="../../models/db/Tables$SmFileCardRow.html#&lt;init&gt;(id:String,storeName:String,fParent:String,fName:String,fExtension:Option[String],fCreationDate:java.time.OffsetDateTime,fLastModifiedDate:java.time.OffsetDateTime,fSize:Option[Long],fMimeTypeJava:Option[String],sha1:Option[String]):Tables.this.SmFileCardRow" title="Permalink">
+      <a href="../../models/db/Tables$SmFileCardRow.html#&lt;init&gt;(id:String,storeName:String,fParent:String,fName:String,fExtension:Option[String],fCreationDate:java.time.LocalDateTime,fLastModifiedDate:java.time.LocalDateTime,fSize:Option[Long],fMimeTypeJava:Option[String],sha256:Option[String],fNameLc:String):Tables.this.SmFileCardRow" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -240,10 +240,10 @@
         <span class="kind">new</span>
       </span>
       <span class="symbol">
-        <span class="name">SmFileCardRow</span><span class="params">(<span name="id">id: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="storeName">storeName: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="fParent">fParent: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="fName">fName: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="fExtension">fExtension: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>] = <span class="symbol">None</span></span>, <span name="fCreationDate">fCreationDate: <span class="extype" name="java.time.OffsetDateTime">OffsetDateTime</span></span>, <span name="fLastModifiedDate">fLastModifiedDate: <span class="extype" name="java.time.OffsetDateTime">OffsetDateTime</span></span>, <span name="fSize">fSize: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Long">Long</span>] = <span class="symbol">None</span></span>, <span name="fMimeTypeJava">fMimeTypeJava: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>] = <span class="symbol">None</span></span>, <span name="sha1">sha1: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>] = <span class="symbol">None</span></span>)</span>
+        <span class="name">SmFileCardRow</span><span class="params">(<span name="id">id: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="storeName">storeName: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="fParent">fParent: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="fName">fName: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="fExtension">fExtension: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>] = <span class="symbol">None</span></span>, <span name="fCreationDate">fCreationDate: <span class="extype" name="java.time.LocalDateTime">LocalDateTime</span></span>, <span name="fLastModifiedDate">fLastModifiedDate: <span class="extype" name="java.time.LocalDateTime">LocalDateTime</span></span>, <span name="fSize">fSize: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Long">Long</span>] = <span class="symbol">None</span></span>, <span name="fMimeTypeJava">fMimeTypeJava: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>] = <span class="symbol">None</span></span>, <span name="sha256">sha256: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>] = <span class="symbol">None</span></span>, <span name="fNameLc">fNameLc: <span class="extype" name="scala.Predef.String">String</span></span>)</span>
       </span>
       
-      <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"></div><dl class="paramcmts block"><dt class="param">id</dt><dd class="cmt"><p>Database column ID SqlType(varchar), PrimaryKey</p></dd><dt class="param">storeName</dt><dd class="cmt"><p>Database column STORE_NAME SqlType(varchar)</p></dd><dt class="param">fParent</dt><dd class="cmt"><p>Database column F_PARENT SqlType(varchar)</p></dd><dt class="param">fName</dt><dd class="cmt"><p>Database column F_NAME SqlType(varchar)</p></dd><dt class="param">fExtension</dt><dd class="cmt"><p>Database column F_EXTENSION SqlType(varchar), Default(None)</p></dd><dt class="param">fCreationDate</dt><dd class="cmt"><p>Database column F_CREATION_DATE SqlType(timestamptz)</p></dd><dt class="param">fLastModifiedDate</dt><dd class="cmt"><p>Database column F_LAST_MODIFIED_DATE SqlType(timestamptz)</p></dd><dt class="param">fSize</dt><dd class="cmt"><p>Database column F_SIZE SqlType(int8), Default(None)</p></dd><dt class="param">fMimeTypeJava</dt><dd class="cmt"><p>Database column F_MIME_TYPE_JAVA SqlType(varchar), Default(None)</p></dd><dt class="param">sha1</dt><dd class="cmt"><p>Database column SHA1 SqlType(varchar), Default(None)</p></dd></dl></div>
+      <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"></div><dl class="paramcmts block"><dt class="param">id</dt><dd class="cmt"><p>Database column ID SqlType(varchar), PrimaryKey</p></dd><dt class="param">storeName</dt><dd class="cmt"><p>Database column STORE_NAME SqlType(varchar)</p></dd><dt class="param">fParent</dt><dd class="cmt"><p>Database column F_PARENT SqlType(varchar)</p></dd><dt class="param">fName</dt><dd class="cmt"><p>Database column F_NAME SqlType(varchar)</p></dd><dt class="param">fExtension</dt><dd class="cmt"><p>Database column F_EXTENSION SqlType(varchar), Default(None)</p></dd><dt class="param">fCreationDate</dt><dd class="cmt"><p>Database column F_CREATION_DATE SqlType(timestamp)</p></dd><dt class="param">fLastModifiedDate</dt><dd class="cmt"><p>Database column F_LAST_MODIFIED_DATE SqlType(timestamp)</p></dd><dt class="param">fSize</dt><dd class="cmt"><p>Database column F_SIZE SqlType(int8), Default(None)</p></dd><dt class="param">fMimeTypeJava</dt><dd class="cmt"><p>Database column F_MIME_TYPE_JAVA SqlType(varchar), Default(None)</p></dd><dt class="param">sha256</dt><dd class="cmt"><p>Database column SHA256 SqlType(varchar), Default(None)</p></dd></dl></div>
     </li></ol>
             </div>
 
@@ -359,9 +359,9 @@
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
     </li><li name="models.db.Tables.SmFileCardRow#fCreationDate" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="fCreationDate:java.time.OffsetDateTime"></a><a id="fCreationDate:OffsetDateTime"></a>
+      <a id="fCreationDate:java.time.LocalDateTime"></a><a id="fCreationDate:LocalDateTime"></a>
       <span class="permalink">
-      <a href="../../models/db/Tables$SmFileCardRow.html#fCreationDate:java.time.OffsetDateTime" title="Permalink">
+      <a href="../../models/db/Tables$SmFileCardRow.html#fCreationDate:java.time.LocalDateTime" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -370,7 +370,7 @@
         <span class="kind">val</span>
       </span>
       <span class="symbol">
-        <span class="name">fCreationDate</span><span class="result">: <span class="extype" name="java.time.OffsetDateTime">OffsetDateTime</span></span>
+        <span class="name">fCreationDate</span><span class="result">: <span class="extype" name="java.time.LocalDateTime">LocalDateTime</span></span>
       </span>
       
       
@@ -391,9 +391,9 @@
       
       
     </li><li name="models.db.Tables.SmFileCardRow#fLastModifiedDate" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="fLastModifiedDate:java.time.OffsetDateTime"></a><a id="fLastModifiedDate:OffsetDateTime"></a>
+      <a id="fLastModifiedDate:java.time.LocalDateTime"></a><a id="fLastModifiedDate:LocalDateTime"></a>
       <span class="permalink">
-      <a href="../../models/db/Tables$SmFileCardRow.html#fLastModifiedDate:java.time.OffsetDateTime" title="Permalink">
+      <a href="../../models/db/Tables$SmFileCardRow.html#fLastModifiedDate:java.time.LocalDateTime" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -402,7 +402,7 @@
         <span class="kind">val</span>
       </span>
       <span class="symbol">
-        <span class="name">fLastModifiedDate</span><span class="result">: <span class="extype" name="java.time.OffsetDateTime">OffsetDateTime</span></span>
+        <span class="name">fLastModifiedDate</span><span class="result">: <span class="extype" name="java.time.LocalDateTime">LocalDateTime</span></span>
       </span>
       
       
@@ -435,6 +435,22 @@
       </span>
       <span class="symbol">
         <span class="name">fName</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
+      </span>
+      
+      
+    </li><li name="models.db.Tables.SmFileCardRow#fNameLc" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="fNameLc:String"></a>
+      <span class="permalink">
+      <a href="../../models/db/Tables$SmFileCardRow.html#fNameLc:String" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">fNameLc</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
       </span>
       
       
@@ -597,10 +613,10 @@
                 <span class="name">@native</span><span class="args">()</span>
               
         </dd></dl></div>
-    </li><li name="models.db.Tables.SmFileCardRow#sha1" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="sha1:Option[String]"></a>
+    </li><li name="models.db.Tables.SmFileCardRow#sha256" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="sha256:Option[String]"></a>
       <span class="permalink">
-      <a href="../../models/db/Tables$SmFileCardRow.html#sha1:Option[String]" title="Permalink">
+      <a href="../../models/db/Tables$SmFileCardRow.html#sha256:Option[String]" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -609,7 +625,7 @@
         <span class="kind">val</span>
       </span>
       <span class="symbol">
-        <span class="name">sha1</span><span class="result">: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>
+        <span class="name">sha256</span><span class="result">: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>
       </span>
       
       

@@ -68,5 +68,6 @@ GET         /viewPathBySha256                                    controllers.SmV
 #search
 GET         /search-form                                         controllers.SmSearch.queryForm
 GET         /search-by-file-name                                 controllers.SmSearch.byFileName(name: String, limit: Int ?= 50)
+GET         /get-files-by-file-name                              controllers.SmSearch.getFilesbyName(name: String, limit: Int ?= 50)
 
 GET         /assets/*file                                        controllers.Assets.versioned(path="/public", file: Asset)

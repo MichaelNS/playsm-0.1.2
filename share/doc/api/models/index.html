@@ -103,6 +103,14 @@
       
     </li><li class="current-entities indented1">
                         <span class="separator"></span>
+                        <a class="class" href="DeviceView.html" title=""></a>
+                        <a href="DeviceView.html" title="">DeviceView</a>
+                      </li><li class="current-entities indented1">
+                        <span class="separator"></span>
+                        <a class="class" href="DirWithoutCat.html" title=""></a>
+                        <a href="DirWithoutCat.html" title="">DirWithoutCat</a>
+                      </li><li class="current-entities indented1">
+                        <span class="separator"></span>
                         <a class="class" href="Entity.html" title=""></a>
                         <a href="Entity.html" title="">Entity</a>
                       </li><li class="current-entities indented1">
@@ -184,7 +192,39 @@
 
         <div id="types" class="types members">
               <h3>Type Members</h3>
-              <ol><li name="models.Entity" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+              <ol><li name="models.DeviceView" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="DeviceViewextendsProductwithSerializable"></a><a id="DeviceView:DeviceView"></a>
+      <span class="permalink">
+      <a href="../models/index.html#DeviceViewextendsProductwithSerializable" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="DeviceView.html"><span class="name">DeviceView</span></a><span class="params">(<span name="name">name: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="label">label: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="uid">uid: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="describe">describe: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="syncDate">syncDate: <span class="extype" name="org.joda.time.DateTime">DateTime</span></span>, <span name="visible">visible: <span class="extype" name="scala.Boolean">Boolean</span></span>, <span name="withOutCrc">withOutCrc: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      
+      
+    </li><li name="models.DirWithoutCat" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="DirWithoutCatextendsProductwithSerializable"></a><a id="DirWithoutCat:DirWithoutCat"></a>
+      <span class="permalink">
+      <a href="../models/index.html#DirWithoutCatextendsProductwithSerializable" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="DirWithoutCat.html"><span class="name">DirWithoutCat</span></a><span class="params">(<span name="path">path: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="date">date: <span class="extype" name="java.time.LocalDate">LocalDate</span></span>)</span><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      
+      
+    </li><li name="models.Entity" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="Entity[T]extendsProductwithSerializable"></a><a id="Entity[T]:Entity[T]"></a>
       <span class="permalink">
       <a href="../models/index.html#Entity[T]extendsProductwithSerializable" title="Permalink">
@@ -244,7 +284,7 @@
         <span class="kind">case class</span>
       </span>
       <span class="symbol">
-        <a title="" href="SmDevice.html"><span class="name">SmDevice</span></a><span class="params">(<span name="name">name: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="label">label: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="uid">uid: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="syncDate">syncDate: <span class="extype" name="java.time.OffsetDateTime">OffsetDateTime</span></span>)</span><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+        <a title="" href="SmDevice.html"><span class="name">SmDevice</span></a><span class="params">(<span name="name">name: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="label">label: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="uid">uid: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="syncDate">syncDate: <span class="extype" name="java.time.LocalDateTime">LocalDateTime</span></span>)</span><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
       </span>
       
       
@@ -260,7 +300,7 @@
         <span class="kind">case class</span>
       </span>
       <span class="symbol">
-        <a title="" href="SmFileCard.html"><span class="name">SmFileCard</span></a><span class="params">(<span name="id">id: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="storeName">storeName: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="fParent">fParent: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="fName">fName: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="fExtension">fExtension: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>] = <span class="symbol">None</span></span>, <span name="fCreationDate">fCreationDate: <span class="extype" name="java.time.OffsetDateTime">OffsetDateTime</span></span>, <span name="fLastModifiedDate">fLastModifiedDate: <span class="extype" name="java.time.OffsetDateTime">OffsetDateTime</span></span>, <span name="fSize">fSize: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Long">Long</span>] = <span class="symbol">None</span></span>, <span name="fMimeTypeJava">fMimeTypeJava: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>] = <span class="symbol">None</span></span>, <span name="sha1">sha1: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>] = <span class="symbol">None</span></span>)</span><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+        <a title="" href="SmFileCard.html"><span class="name">SmFileCard</span></a><span class="params">(<span name="id">id: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="storeName">storeName: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="fParent">fParent: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="fName">fName: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="fExtension">fExtension: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>] = <span class="symbol">None</span></span>, <span name="fCreationDate">fCreationDate: <span class="extype" name="java.time.LocalDateTime">LocalDateTime</span></span>, <span name="fLastModifiedDate">fLastModifiedDate: <span class="extype" name="java.time.LocalDateTime">LocalDateTime</span></span>, <span name="fSize">fSize: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Long">Long</span>] = <span class="symbol">None</span></span>, <span name="fMimeTypeJava">fMimeTypeJava: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>] = <span class="symbol">None</span></span>, <span name="sha256">sha256: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>] = <span class="symbol">None</span></span>, <span name="fNameLc">fNameLc: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
       </span>
       
       

@@ -107,8 +107,8 @@
                         <a href="BufferedReaderOps.html" title="">BufferedReaderOps</a>
                       </li><li class="current-entities indented2">
                         <span class="separator"></span>
-                        <a class="class" href="CloseableOps.html" title=""></a>
-                        <a href="CloseableOps.html" title="">CloseableOps</a>
+                        <a class="class" href="DisposeableOps.html" title=""></a>
+                        <a href="DisposeableOps.html" title="">DisposeableOps</a>
                       </li><li class="current-entities indented2">
                         <span class="separator"></span>
                         <a class="class" href="FileChannelOps.html" title=""></a>
@@ -213,7 +213,7 @@
           <span class="toggle">
             Linear Supertypes
           </span>
-          <div class="superTypes hiddenContent"><span class="extype" name="better.files.Implicits">Implicits</span>, <span class="extype" name="better.files.Scanner.Source.Implicits">files.Scanner.Source.Implicits</span>, <span class="extype" name="better.files.Scanner.Read.Implicits">files.Scanner.Read.Implicits</span>, <span class="extype" name="better.files.ManagedResource.FlatMap.Implicits">files.ManagedResource.FlatMap.Implicits</span>, <span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
+          <div class="superTypes hiddenContent"><span class="extype" name="better.files.Implicits">Implicits</span>, <span class="extype" name="better.files.Scanner.Source.Implicits">files.Scanner.Source.Implicits</span>, <span class="extype" name="better.files.Scanner.Read.Implicits">files.Scanner.Read.Implicits</span>, <span class="extype" name="better.files.Dispose.FlatMap.Implicits">files.Dispose.FlatMap.Implicits</span>, <span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
         </div></div>
         
 
@@ -239,7 +239,7 @@
                   <span class="filtertype">Inherited<br />
                   </span>
                   <ol id="linearization">
-                    <li class="in" name="better.files"><span>files</span></li><li class="in" name="better.files.Implicits"><span>Implicits</span></li><li class="in" name="better.files.Scanner.Source.Implicits"><span>Implicits</span></li><li class="in" name="better.files.Scanner.Read.Implicits"><span>Implicits</span></li><li class="in" name="better.files.ManagedResource.FlatMap.Implicits"><span>Implicits</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
+                    <li class="in" name="better.files"><span>files</span></li><li class="in" name="better.files.Implicits"><span>Implicits</span></li><li class="in" name="better.files.Scanner.Source.Implicits"><span>Implicits</span></li><li class="in" name="better.files.Scanner.Read.Implicits"><span>Implicits</span></li><li class="in" name="better.files.Dispose.FlatMap.Implicits"><span>Implicits</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
                   </ol>
                 </div><div class="ancestors">
               <span class="filtertype"></span>
@@ -277,10 +277,10 @@
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Implicits</dd></dl></div>
-    </li><li name="better.files.Implicits.CloseableOps" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="CloseableOps[A&lt;:AutoCloseable]extendsAnyRef"></a><a id="CloseableOps[A&lt;:AutoCloseable]:CloseableOps[A]"></a>
+    </li><li name="better.files.Implicits.DisposeableOps" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="DisposeableOps[A]extendsAnyRef"></a><a id="DisposeableOps[A]:DisposeableOps[A]"></a>
       <span class="permalink">
-      <a href="../../better/files/index.html#CloseableOps[A&lt;:AutoCloseable]extendsAnyRef" title="Permalink">
+      <a href="../../better/files/index.html#DisposeableOps[A]extendsAnyRef" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -289,7 +289,7 @@
         <span class="kind">class</span>
       </span>
       <span class="symbol">
-        <span class="name">CloseableOps</span><span class="tparams">[<span name="A">A &lt;: <span class="extype" name="java.lang.AutoCloseable">AutoCloseable</span></span>]</span><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+        <span class="name">DisposeableOps</span><span class="tparams">[<span name="A">A</span>]</span><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Implicits</dd></dl></div>
@@ -325,22 +325,6 @@
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Implicits</dd></dl></div>
-    </li><li name="better.files.Files" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="Files=Iterator[better.files.File]"></a><a id="Files:Files"></a>
-      <span class="permalink">
-      <a href="../../better/files/index.html#Files=Iterator[better.files.File]" title="Permalink">
-        <i class="material-icons"></i>
-      </a>
-    </span>
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">type</span>
-      </span>
-      <span class="symbol">
-        <span class="name">Files</span><span class="result alias"> = <span class="extype" name="scala.collection.Iterator">Iterator</span>[<span class="extype" name="better.files.File">File</span>]</span>
-      </span>
-      
-      
     </li><li name="better.files.Implicits.InputStreamOps" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="InputStreamOpsextendsAnyRef"></a><a id="InputStreamOps:InputStreamOps"></a>
       <span class="permalink">
@@ -1149,6 +1133,22 @@
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Implicits</dd></dl></div>
+    </li><li name="better.files#using" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="using[A,B](resource:A)(f:A=&gt;B)(implicitevidence$1:better.files.Disposable[A]):B"></a><a id="using[A,B](A)((A)⇒B)(Disposable[A]):B"></a>
+      <span class="permalink">
+      <a href="../../better/files/index.html#using[A,B](resource:A)(f:A=&gt;B)(implicitevidence$1:better.files.Disposable[A]):B" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">using</span><span class="tparams">[<span name="A">A</span>, <span name="B">B</span>]</span><span class="params">(<span name="resource">resource: <span class="extype" name="better.files.using.A">A</span></span>)</span><span class="params">(<span name="f">f: (<span class="extype" name="better.files.using.A">A</span>) ⇒ <span class="extype" name="better.files.using.B">B</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="arg0">arg0: <span class="extype" name="better.files.Disposable">Disposable</span>[<span class="extype" name="better.files.using.A">A</span>]</span>)</span><span class="result">: <span class="extype" name="better.files.using.B">B</span></span>
+      </span>
+      
+      
     </li><li name="better.files.Scanner.Read.Implicits#yearMonthRead" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="yearMonthRead:better.files.Scanner.Read[java.time.YearMonth]"></a><a id="yearMonthRead:Read[YearMonth]"></a>
       <span class="permalink">
@@ -1213,8 +1213,8 @@
               <h3>Inherited from <span class="extype" name="better.files.Scanner.Source.Implicits">files.Scanner.Source.Implicits</span></h3>
             </div><div class="parent" name="better.files.Scanner.Read.Implicits">
               <h3>Inherited from <span class="extype" name="better.files.Scanner.Read.Implicits">files.Scanner.Read.Implicits</span></h3>
-            </div><div class="parent" name="better.files.ManagedResource.FlatMap.Implicits">
-              <h3>Inherited from <span class="extype" name="better.files.ManagedResource.FlatMap.Implicits">files.ManagedResource.FlatMap.Implicits</span></h3>
+            </div><div class="parent" name="better.files.Dispose.FlatMap.Implicits">
+              <h3>Inherited from <span class="extype" name="better.files.Dispose.FlatMap.Implicits">files.Dispose.FlatMap.Implicits</span></h3>
             </div><div class="parent" name="scala.AnyRef">
               <h3>Inherited from <span class="extype" name="scala.AnyRef">AnyRef</span></h3>
             </div><div class="parent" name="scala.Any">

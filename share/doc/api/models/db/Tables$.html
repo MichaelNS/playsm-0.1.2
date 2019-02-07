@@ -199,7 +199,7 @@
         <span class="kind">class</span>
       </span>
       <span class="symbol">
-        <a title="Table description of table sm_category_fc." href="Tables$SmCategoryFc.html"><span class="name">SmCategoryFc</span></a><span class="result"> extends <a href="../../utils/db/TetraoPostgresDriver$TetraoAPI$.html#Table[T]=RelationalProfile.this.Table[T]" class="extmbr" name="utils.db.TetraoPostgresDriver.TetraoAPI.Table">utils.db.TetraoPostgresDriver.TetraoAPI.Table</a>[<a href="Tables$SmCategoryFcRow.html" class="extype" name="models.db.Tables.SmCategoryFcRow">SmCategoryFcRow</a>]</span>
+        <a title="Table description of table sm_category_fc." href="Tables$SmCategoryFc.html"><span class="name">SmCategoryFc</span></a><span class="result"> extends <a href="../../utils/db/SmPostgresDriver$SmPgAPI$.html#Table[T]=RelationalProfile.this.Table[T]" class="extmbr" name="utils.db.SmPostgresDriver.SmPgAPI.Table">utils.db.SmPostgresDriver.SmPgAPI.Table</a>[<a href="Tables$SmCategoryFcRow.html" class="extype" name="models.db.Tables.SmCategoryFcRow">SmCategoryFcRow</a>]</span>
       </span>
       
       <p class="shortcomment cmt">Table description of table sm_category_fc.</p><div class="fullcomment"><div class="comment cmt"><p>Table description of table sm_category_fc. Objects of this class serve as prototypes for rows in queries.</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Tables.html" class="extype" name="models.db.Tables">Tables</a></dd></dl></div>
@@ -233,7 +233,7 @@
         <span class="kind">class</span>
       </span>
       <span class="symbol">
-        <a title="Table description of table sm_device." href="Tables$SmDevice.html"><span class="name">SmDevice</span></a><span class="result"> extends <a href="../../utils/db/TetraoPostgresDriver$TetraoAPI$.html#Table[T]=RelationalProfile.this.Table[T]" class="extmbr" name="utils.db.TetraoPostgresDriver.TetraoAPI.Table">utils.db.TetraoPostgresDriver.TetraoAPI.Table</a>[<a href="Tables$SmDeviceRow.html" class="extype" name="models.db.Tables.SmDeviceRow">SmDeviceRow</a>]</span>
+        <a title="Table description of table sm_device." href="Tables$SmDevice.html"><span class="name">SmDevice</span></a><span class="result"> extends <a href="../../utils/db/SmPostgresDriver$SmPgAPI$.html#Table[T]=RelationalProfile.this.Table[T]" class="extmbr" name="utils.db.SmPostgresDriver.SmPgAPI.Table">utils.db.SmPostgresDriver.SmPgAPI.Table</a>[<a href="Tables$SmDeviceRow.html" class="extype" name="models.db.Tables.SmDeviceRow">SmDeviceRow</a>]</span>
       </span>
       
       <p class="shortcomment cmt">Table description of table sm_device.</p><div class="fullcomment"><div class="comment cmt"><p>Table description of table sm_device. Objects of this class serve as prototypes for rows in queries.</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Tables.html" class="extype" name="models.db.Tables">Tables</a></dd></dl></div>
@@ -249,12 +249,10 @@
         <span class="kind">case class</span>
       </span>
       <span class="symbol">
-        <a title="Entity class storing rows of table SmDevice" href="Tables$SmDeviceRow.html"><span class="name">SmDeviceRow</span></a><span class="params">(<span name="id">id: <span class="extype" name="scala.Int">Int</span></span>, <span name="name">name: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="label">label: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="uid">uid: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="syncDate">syncDate: <span class="extype" name="java.time.OffsetDateTime">OffsetDateTime</span></span>)</span><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+        <a title="Entity class storing rows of table SmDevice" href="Tables$SmDeviceRow.html"><span class="name">SmDeviceRow</span></a><span class="params">(<span name="id">id: <span class="extype" name="scala.Int">Int</span></span>, <span name="name">name: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="label">label: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="uid">uid: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="syncDate">syncDate: <span class="extype" name="java.time.LocalDateTime">LocalDateTime</span></span>, <span name="describe">describe: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>] = <span class="symbol">None</span></span>, <span name="visible">visible: <span class="extype" name="scala.Boolean">Boolean</span> = <span class="symbol">true</span></span>)</span><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
       </span>
       
-      <p class="shortcomment cmt">Entity class storing rows of table SmDevice
-</p><div class="fullcomment"><div class="comment cmt"><p>Entity class storing rows of table SmDevice
-</p></div><dl class="paramcmts block"><dt class="param">id</dt><dd class="cmt"><p>Database column ID SqlType(serial), AutoInc, PrimaryKey</p></dd><dt class="param">name</dt><dd class="cmt"><p>Database column NAME SqlType(varchar)</p></dd><dt class="param">label</dt><dd class="cmt"><p>Database column LABEL SqlType(varchar)</p></dd><dt class="param">uid</dt><dd class="cmt"><p>Database column UID SqlType(varchar)</p></dd><dt class="param">syncDate</dt><dd class="cmt"><p>Database column SYNC_DATE SqlType(timestamptz)</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Tables.html" class="extype" name="models.db.Tables">Tables</a></dd></dl></div>
+      <p class="shortcomment cmt">Entity class storing rows of table SmDevice</p><div class="fullcomment"><div class="comment cmt"><p>Entity class storing rows of table SmDevice</p></div><dl class="paramcmts block"><dt class="param">id</dt><dd class="cmt"><p>Database column ID SqlType(serial), AutoInc, PrimaryKey</p></dd><dt class="param">name</dt><dd class="cmt"><p>Database column NAME SqlType(varchar)</p></dd><dt class="param">label</dt><dd class="cmt"><p>Database column LABEL SqlType(varchar)</p></dd><dt class="param">uid</dt><dd class="cmt"><p>Database column UID SqlType(varchar)</p></dd><dt class="param">syncDate</dt><dd class="cmt"><p>Database column SYNC_DATE SqlType(timestamp)</p></dd><dt class="param">describe</dt><dd class="cmt"><p>Database column DESCRIBE SqlType(varchar), Default(None)</p></dd><dt class="param">visible</dt><dd class="cmt"><p>Database column VISIBLE SqlType(bool), Default(true)</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Tables.html" class="extype" name="models.db.Tables">Tables</a></dd></dl></div>
     </li><li name="models.db.Tables.SmFileCard" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="SmFileCardextendsTables.this.profile.api.Table[Tables.this.SmFileCardRow]"></a><a id="SmFileCard:SmFileCard"></a>
       <span class="permalink">
@@ -267,7 +265,7 @@
         <span class="kind">class</span>
       </span>
       <span class="symbol">
-        <a title="Table description of table sm_file_card." href="Tables$SmFileCard.html"><span class="name">SmFileCard</span></a><span class="result"> extends <a href="../../utils/db/TetraoPostgresDriver$TetraoAPI$.html#Table[T]=RelationalProfile.this.Table[T]" class="extmbr" name="utils.db.TetraoPostgresDriver.TetraoAPI.Table">utils.db.TetraoPostgresDriver.TetraoAPI.Table</a>[<a href="Tables$SmFileCardRow.html" class="extype" name="models.db.Tables.SmFileCardRow">SmFileCardRow</a>]</span>
+        <a title="Table description of table sm_file_card." href="Tables$SmFileCard.html"><span class="name">SmFileCard</span></a><span class="result"> extends <a href="../../utils/db/SmPostgresDriver$SmPgAPI$.html#Table[T]=RelationalProfile.this.Table[T]" class="extmbr" name="utils.db.SmPostgresDriver.SmPgAPI.Table">utils.db.SmPostgresDriver.SmPgAPI.Table</a>[<a href="Tables$SmFileCardRow.html" class="extype" name="models.db.Tables.SmFileCardRow">SmFileCardRow</a>]</span>
       </span>
       
       <p class="shortcomment cmt">Table description of table sm_file_card.</p><div class="fullcomment"><div class="comment cmt"><p>Table description of table sm_file_card. Objects of this class serve as prototypes for rows in queries.</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Tables.html" class="extype" name="models.db.Tables">Tables</a></dd></dl></div>
@@ -283,12 +281,12 @@
         <span class="kind">case class</span>
       </span>
       <span class="symbol">
-        <a title="Entity class storing rows of table SmFileCard" href="Tables$SmFileCardRow.html"><span class="name">SmFileCardRow</span></a><span class="params">(<span name="id">id: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="storeName">storeName: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="fParent">fParent: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="fName">fName: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="fExtension">fExtension: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>] = <span class="symbol">None</span></span>, <span name="fCreationDate">fCreationDate: <span class="extype" name="java.time.OffsetDateTime">OffsetDateTime</span></span>, <span name="fLastModifiedDate">fLastModifiedDate: <span class="extype" name="java.time.OffsetDateTime">OffsetDateTime</span></span>, <span name="fSize">fSize: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Long">Long</span>] = <span class="symbol">None</span></span>, <span name="fMimeTypeJava">fMimeTypeJava: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>] = <span class="symbol">None</span></span>, <span name="sha1">sha1: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>] = <span class="symbol">None</span></span>)</span><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+        <a title="Entity class storing rows of table SmFileCard" href="Tables$SmFileCardRow.html"><span class="name">SmFileCardRow</span></a><span class="params">(<span name="id">id: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="storeName">storeName: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="fParent">fParent: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="fName">fName: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="fExtension">fExtension: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>] = <span class="symbol">None</span></span>, <span name="fCreationDate">fCreationDate: <span class="extype" name="java.time.LocalDateTime">LocalDateTime</span></span>, <span name="fLastModifiedDate">fLastModifiedDate: <span class="extype" name="java.time.LocalDateTime">LocalDateTime</span></span>, <span name="fSize">fSize: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Long">Long</span>] = <span class="symbol">None</span></span>, <span name="fMimeTypeJava">fMimeTypeJava: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>] = <span class="symbol">None</span></span>, <span name="sha256">sha256: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>] = <span class="symbol">None</span></span>, <span name="fNameLc">fNameLc: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
       </span>
       
       <p class="shortcomment cmt">Entity class storing rows of table SmFileCard
 </p><div class="fullcomment"><div class="comment cmt"><p>Entity class storing rows of table SmFileCard
-</p></div><dl class="paramcmts block"><dt class="param">id</dt><dd class="cmt"><p>Database column ID SqlType(varchar), PrimaryKey</p></dd><dt class="param">storeName</dt><dd class="cmt"><p>Database column STORE_NAME SqlType(varchar)</p></dd><dt class="param">fParent</dt><dd class="cmt"><p>Database column F_PARENT SqlType(varchar)</p></dd><dt class="param">fName</dt><dd class="cmt"><p>Database column F_NAME SqlType(varchar)</p></dd><dt class="param">fExtension</dt><dd class="cmt"><p>Database column F_EXTENSION SqlType(varchar), Default(None)</p></dd><dt class="param">fCreationDate</dt><dd class="cmt"><p>Database column F_CREATION_DATE SqlType(timestamptz)</p></dd><dt class="param">fLastModifiedDate</dt><dd class="cmt"><p>Database column F_LAST_MODIFIED_DATE SqlType(timestamptz)</p></dd><dt class="param">fSize</dt><dd class="cmt"><p>Database column F_SIZE SqlType(int8), Default(None)</p></dd><dt class="param">fMimeTypeJava</dt><dd class="cmt"><p>Database column F_MIME_TYPE_JAVA SqlType(varchar), Default(None)</p></dd><dt class="param">sha1</dt><dd class="cmt"><p>Database column SHA1 SqlType(varchar), Default(None)</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Tables.html" class="extype" name="models.db.Tables">Tables</a></dd></dl></div>
+</p></div><dl class="paramcmts block"><dt class="param">id</dt><dd class="cmt"><p>Database column ID SqlType(varchar), PrimaryKey</p></dd><dt class="param">storeName</dt><dd class="cmt"><p>Database column STORE_NAME SqlType(varchar)</p></dd><dt class="param">fParent</dt><dd class="cmt"><p>Database column F_PARENT SqlType(varchar)</p></dd><dt class="param">fName</dt><dd class="cmt"><p>Database column F_NAME SqlType(varchar)</p></dd><dt class="param">fExtension</dt><dd class="cmt"><p>Database column F_EXTENSION SqlType(varchar), Default(None)</p></dd><dt class="param">fCreationDate</dt><dd class="cmt"><p>Database column F_CREATION_DATE SqlType(timestamp)</p></dd><dt class="param">fLastModifiedDate</dt><dd class="cmt"><p>Database column F_LAST_MODIFIED_DATE SqlType(timestamp)</p></dd><dt class="param">fSize</dt><dd class="cmt"><p>Database column F_SIZE SqlType(int8), Default(None)</p></dd><dt class="param">fMimeTypeJava</dt><dd class="cmt"><p>Database column F_MIME_TYPE_JAVA SqlType(varchar), Default(None)</p></dd><dt class="param">sha256</dt><dd class="cmt"><p>Database column SHA256 SqlType(varchar), Default(None)</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Tables.html" class="extype" name="models.db.Tables">Tables</a></dd></dl></div>
     </li><li name="models.db.Tables.SmPathMove" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="SmPathMoveextendsTables.this.profile.api.Table[Tables.this.SmPathMoveRow]"></a><a id="SmPathMove:SmPathMove"></a>
       <span class="permalink">
@@ -301,7 +299,7 @@
         <span class="kind">class</span>
       </span>
       <span class="symbol">
-        <a title="Table description of table sm_path_move." href="Tables$SmPathMove.html"><span class="name">SmPathMove</span></a><span class="result"> extends <a href="../../utils/db/TetraoPostgresDriver$TetraoAPI$.html#Table[T]=RelationalProfile.this.Table[T]" class="extmbr" name="utils.db.TetraoPostgresDriver.TetraoAPI.Table">utils.db.TetraoPostgresDriver.TetraoAPI.Table</a>[<a href="Tables$SmPathMoveRow.html" class="extype" name="models.db.Tables.SmPathMoveRow">SmPathMoveRow</a>]</span>
+        <a title="Table description of table sm_path_move." href="Tables$SmPathMove.html"><span class="name">SmPathMove</span></a><span class="result"> extends <a href="../../utils/db/SmPostgresDriver$SmPgAPI$.html#Table[T]=RelationalProfile.this.Table[T]" class="extmbr" name="utils.db.SmPostgresDriver.SmPgAPI.Table">utils.db.SmPostgresDriver.SmPgAPI.Table</a>[<a href="Tables$SmPathMoveRow.html" class="extype" name="models.db.Tables.SmPathMoveRow">SmPathMoveRow</a>]</span>
       </span>
       
       <p class="shortcomment cmt">Table description of table sm_path_move.</p><div class="fullcomment"><div class="comment cmt"><p>Table description of table sm_path_move. Objects of this class serve as prototypes for rows in queries.</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Tables.html" class="extype" name="models.db.Tables">Tables</a></dd></dl></div>
@@ -320,9 +318,7 @@
         <a title="Entity class storing rows of table SmPathMove" href="Tables$SmPathMoveRow.html"><span class="name">SmPathMoveRow</span></a><span class="params">(<span name="id">id: <span class="extype" name="scala.Int">Int</span></span>, <span name="storeName">storeName: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="pathFrom">pathFrom: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="pathTo">pathTo: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
       </span>
       
-      <p class="shortcomment cmt">Entity class storing rows of table SmPathMove
-</p><div class="fullcomment"><div class="comment cmt"><p>Entity class storing rows of table SmPathMove
-</p></div><dl class="paramcmts block"><dt class="param">id</dt><dd class="cmt"><p>Database column ID SqlType(serial), AutoInc, PrimaryKey</p></dd><dt class="param">storeName</dt><dd class="cmt"><p>Database column STORE_NAME SqlType(varchar)</p></dd><dt class="param">pathFrom</dt><dd class="cmt"><p>Database column PATH_FROM SqlType(varchar)</p></dd><dt class="param">pathTo</dt><dd class="cmt"><p>Database column PATH_TO SqlType(varchar)</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Tables.html" class="extype" name="models.db.Tables">Tables</a></dd></dl></div>
+      <p class="shortcomment cmt">Entity class storing rows of table SmPathMove</p><div class="fullcomment"><div class="comment cmt"><p>Entity class storing rows of table SmPathMove</p></div><dl class="paramcmts block"><dt class="param">id</dt><dd class="cmt"><p>Database column ID SqlType(serial), AutoInc, PrimaryKey</p></dd><dt class="param">storeName</dt><dd class="cmt"><p>Database column STORE_NAME SqlType(varchar)</p></dd><dt class="param">pathFrom</dt><dd class="cmt"><p>Database column PATH_FROM SqlType(varchar)</p></dd><dt class="param">pathTo</dt><dd class="cmt"><p>Database column PATH_TO SqlType(varchar)</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Tables.html" class="extype" name="models.db.Tables">Tables</a></dd></dl></div>
     </li></ol>
             </div>
 
@@ -396,9 +392,9 @@
       
       <p class="shortcomment cmt">GetResult implicit for fetching SmCategoryFcRow objects using plain SQL queries</p><div class="fullcomment"><div class="comment cmt"><p>GetResult implicit for fetching SmCategoryFcRow objects using plain SQL queries</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Tables.html" class="extype" name="models.db.Tables">Tables</a></dd></dl></div>
     </li><li name="models.db.Tables#GetResultSmDeviceRow" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="GetResultSmDeviceRow(implicite0:slick.jdbc.GetResult[Int],implicite1:slick.jdbc.GetResult[String],implicite2:slick.jdbc.GetResult[java.time.OffsetDateTime]):slick.jdbc.GetResult[Tables.this.SmDeviceRow]"></a><a id="GetResultSmDeviceRow(GetResult[Int],GetResult[String],GetResult[OffsetDateTime]):GetResult[SmDeviceRow]"></a>
+      <a id="GetResultSmDeviceRow(implicite0:slick.jdbc.GetResult[Int],implicite1:slick.jdbc.GetResult[String],implicite2:slick.jdbc.GetResult[java.time.LocalDateTime],implicite3:slick.jdbc.GetResult[Option[String]],implicite4:slick.jdbc.GetResult[Boolean]):slick.jdbc.GetResult[Tables.this.SmDeviceRow]"></a><a id="GetResultSmDeviceRow(GetResult[Int],GetResult[String],GetResult[LocalDateTime],GetResult[Option[String]],GetResult[Boolean]):GetResult[SmDeviceRow]"></a>
       <span class="permalink">
-      <a href="../../models/db/Tables$.html#GetResultSmDeviceRow(implicite0:slick.jdbc.GetResult[Int],implicite1:slick.jdbc.GetResult[String],implicite2:slick.jdbc.GetResult[java.time.OffsetDateTime]):slick.jdbc.GetResult[Tables.this.SmDeviceRow]" title="Permalink">
+      <a href="../../models/db/Tables$.html#GetResultSmDeviceRow(implicite0:slick.jdbc.GetResult[Int],implicite1:slick.jdbc.GetResult[String],implicite2:slick.jdbc.GetResult[java.time.LocalDateTime],implicite3:slick.jdbc.GetResult[Option[String]],implicite4:slick.jdbc.GetResult[Boolean]):slick.jdbc.GetResult[Tables.this.SmDeviceRow]" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -407,14 +403,14 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">GetResultSmDeviceRow</span><span class="params">(<span class="implicit">implicit </span><span name="e0">e0: <span class="extype" name="slick.jdbc.GetResult">GetResult</span>[<span class="extype" name="scala.Int">Int</span>]</span>, <span name="e1">e1: <span class="extype" name="slick.jdbc.GetResult">GetResult</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>, <span name="e2">e2: <span class="extype" name="slick.jdbc.GetResult">GetResult</span>[<span class="extype" name="java.time.OffsetDateTime">OffsetDateTime</span>]</span>)</span><span class="result">: <span class="extype" name="slick.jdbc.GetResult">GetResult</span>[<a href="#SmDeviceRowextendsProductwithSerializable" class="extmbr" name="models.db.Tables.SmDeviceRow">SmDeviceRow</a>]</span>
+        <span class="name">GetResultSmDeviceRow</span><span class="params">(<span class="implicit">implicit </span><span name="e0">e0: <span class="extype" name="slick.jdbc.GetResult">GetResult</span>[<span class="extype" name="scala.Int">Int</span>]</span>, <span name="e1">e1: <span class="extype" name="slick.jdbc.GetResult">GetResult</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>, <span name="e2">e2: <span class="extype" name="slick.jdbc.GetResult">GetResult</span>[<span class="extype" name="java.time.LocalDateTime">LocalDateTime</span>]</span>, <span name="e3">e3: <span class="extype" name="slick.jdbc.GetResult">GetResult</span>[<span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>]]</span>, <span name="e4">e4: <span class="extype" name="slick.jdbc.GetResult">GetResult</span>[<span class="extype" name="scala.Boolean">Boolean</span>]</span>)</span><span class="result">: <span class="extype" name="slick.jdbc.GetResult">GetResult</span>[<a href="#SmDeviceRowextendsProductwithSerializable" class="extmbr" name="models.db.Tables.SmDeviceRow">SmDeviceRow</a>]</span>
       </span>
       
       <p class="shortcomment cmt">GetResult implicit for fetching SmDeviceRow objects using plain SQL queries</p><div class="fullcomment"><div class="comment cmt"><p>GetResult implicit for fetching SmDeviceRow objects using plain SQL queries</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Tables.html" class="extype" name="models.db.Tables">Tables</a></dd></dl></div>
     </li><li name="models.db.Tables#GetResultSmFileCardRow" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="GetResultSmFileCardRow(implicite0:slick.jdbc.GetResult[String],implicite1:slick.jdbc.GetResult[Option[String]],implicite2:slick.jdbc.GetResult[java.time.OffsetDateTime],implicite3:slick.jdbc.GetResult[Option[Long]]):slick.jdbc.GetResult[Tables.this.SmFileCardRow]"></a><a id="GetResultSmFileCardRow(GetResult[String],GetResult[Option[String]],GetResult[OffsetDateTime],GetResult[Option[Long]]):GetResult[SmFileCardRow]"></a>
+      <a id="GetResultSmFileCardRow(implicite0:slick.jdbc.GetResult[String],implicite1:slick.jdbc.GetResult[Option[String]],implicite2:slick.jdbc.GetResult[java.time.LocalDateTime],implicite3:slick.jdbc.GetResult[Option[Long]]):slick.jdbc.GetResult[Tables.this.SmFileCardRow]"></a><a id="GetResultSmFileCardRow(GetResult[String],GetResult[Option[String]],GetResult[LocalDateTime],GetResult[Option[Long]]):GetResult[SmFileCardRow]"></a>
       <span class="permalink">
-      <a href="../../models/db/Tables$.html#GetResultSmFileCardRow(implicite0:slick.jdbc.GetResult[String],implicite1:slick.jdbc.GetResult[Option[String]],implicite2:slick.jdbc.GetResult[java.time.OffsetDateTime],implicite3:slick.jdbc.GetResult[Option[Long]]):slick.jdbc.GetResult[Tables.this.SmFileCardRow]" title="Permalink">
+      <a href="../../models/db/Tables$.html#GetResultSmFileCardRow(implicite0:slick.jdbc.GetResult[String],implicite1:slick.jdbc.GetResult[Option[String]],implicite2:slick.jdbc.GetResult[java.time.LocalDateTime],implicite3:slick.jdbc.GetResult[Option[Long]]):slick.jdbc.GetResult[Tables.this.SmFileCardRow]" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -423,7 +419,7 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">GetResultSmFileCardRow</span><span class="params">(<span class="implicit">implicit </span><span name="e0">e0: <span class="extype" name="slick.jdbc.GetResult">GetResult</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>, <span name="e1">e1: <span class="extype" name="slick.jdbc.GetResult">GetResult</span>[<span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>]]</span>, <span name="e2">e2: <span class="extype" name="slick.jdbc.GetResult">GetResult</span>[<span class="extype" name="java.time.OffsetDateTime">OffsetDateTime</span>]</span>, <span name="e3">e3: <span class="extype" name="slick.jdbc.GetResult">GetResult</span>[<span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Long">Long</span>]]</span>)</span><span class="result">: <span class="extype" name="slick.jdbc.GetResult">GetResult</span>[<a href="#SmFileCardRowextendsProductwithSerializable" class="extmbr" name="models.db.Tables.SmFileCardRow">SmFileCardRow</a>]</span>
+        <span class="name">GetResultSmFileCardRow</span><span class="params">(<span class="implicit">implicit </span><span name="e0">e0: <span class="extype" name="slick.jdbc.GetResult">GetResult</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>, <span name="e1">e1: <span class="extype" name="slick.jdbc.GetResult">GetResult</span>[<span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>]]</span>, <span name="e2">e2: <span class="extype" name="slick.jdbc.GetResult">GetResult</span>[<span class="extype" name="java.time.LocalDateTime">LocalDateTime</span>]</span>, <span name="e3">e3: <span class="extype" name="slick.jdbc.GetResult">GetResult</span>[<span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Long">Long</span>]]</span>)</span><span class="result">: <span class="extype" name="slick.jdbc.GetResult">GetResult</span>[<a href="#SmFileCardRowextendsProductwithSerializable" class="extmbr" name="models.db.Tables.SmFileCardRow">SmFileCardRow</a>]</span>
       </span>
       
       <p class="shortcomment cmt">GetResult implicit for fetching SmFileCardRow objects using plain SQL queries</p><div class="fullcomment"><div class="comment cmt"><p>GetResult implicit for fetching SmFileCardRow objects using plain SQL queries</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Tables.html" class="extype" name="models.db.Tables">Tables</a></dd></dl></div>
@@ -710,9 +706,9 @@
               
         </dd></dl></div>
     </li><li name="models.db.Tables#profile" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="profile:utils.db.TetraoPostgresDriver.type"></a><a id="profile:TetraoPostgresDriver.type"></a>
+      <a id="profile:utils.db.SmPostgresDriver.type"></a><a id="profile:SmPostgresDriver.type"></a>
       <span class="permalink">
-      <a href="../../models/db/Tables$.html#profile:utils.db.TetraoPostgresDriver.type" title="Permalink">
+      <a href="../../models/db/Tables$.html#profile:utils.db.SmPostgresDriver.type" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -721,12 +717,12 @@
         <span class="kind">val</span>
       </span>
       <span class="symbol">
-        <span class="name">profile</span><span class="result">: <a href="../../utils/db/TetraoPostgresDriver$.html" class="extype" name="utils.db.TetraoPostgresDriver">TetraoPostgresDriver</a>.type</span>
+        <span class="name">profile</span><span class="result">: <a href="../../utils/db/SmPostgresDriver$.html" class="extype" name="utils.db.SmPostgresDriver">SmPostgresDriver</a>.type</span>
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="models.db.Tables">Tables</a> → <a href="Tables.html" class="extype" name="models.db.Tables">Tables</a></dd></dl></div>
     </li><li name="models.db.Tables#schema" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="schema:Tables.this.profile.SchemaDescription"></a><a id="schema:utils.db.TetraoPostgresDriver.SchemaDescription"></a>
+      <a id="schema:Tables.this.profile.SchemaDescription"></a><a id="schema:utils.db.SmPostgresDriver.SchemaDescription"></a>
       <span class="permalink">
       <a href="../../models/db/Tables$.html#schema:Tables.this.profile.SchemaDescription" title="Permalink">
         <i class="material-icons"></i>
@@ -737,7 +733,7 @@
         <span class="kind">lazy val</span>
       </span>
       <span class="symbol">
-        <span class="name">schema</span><span class="result">: <a href="../../utils/db/TetraoPostgresDriver$.html#SchemaDescription=SqlProfile.this.DDL" class="extmbr" name="utils.db.TetraoPostgresDriver.SchemaDescription">utils.db.TetraoPostgresDriver.SchemaDescription</a></span>
+        <span class="name">schema</span><span class="result">: <a href="../../utils/db/SmPostgresDriver$.html#SchemaDescription=SqlProfile.this.DDL" class="extmbr" name="utils.db.SmPostgresDriver.SchemaDescription">utils.db.SmPostgresDriver.SchemaDescription</a></span>
       </span>
       
       <p class="shortcomment cmt">DDL for all tables.</p><div class="fullcomment"><div class="comment cmt"><p>DDL for all tables. Call .create to execute.</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Tables.html" class="extype" name="models.db.Tables">Tables</a></dd></dl></div>
@@ -850,7 +846,7 @@
         <div class="values members">
               <h3>Deprecated Value Members</h3>
               <ol><li name="models.db.Tables#ddl" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="ddl:Tables.this.profile.DDL"></a><a id="ddl:utils.db.TetraoPostgresDriver.DDL"></a>
+      <a id="ddl:Tables.this.profile.DDL"></a><a id="ddl:utils.db.SmPostgresDriver.DDL"></a>
       <span class="permalink">
       <a href="../../models/db/Tables$.html#ddl:Tables.this.profile.DDL" title="Permalink">
         <i class="material-icons"></i>
@@ -861,7 +857,7 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name deprecated" title="Deprecated: (Since version 3.0) Use .schema instead of .ddl">ddl</span><span class="result">: <a href="../../utils/db/TetraoPostgresDriver$.html#DDLextendsSqlProfile.this.SchemaDescriptionDef" class="extmbr" name="utils.db.TetraoPostgresDriver.DDL">utils.db.TetraoPostgresDriver.DDL</a></span>
+        <span class="name deprecated" title="Deprecated: (Since version 3.0) Use .schema instead of .ddl">ddl</span><span class="result">: <a href="../../utils/db/SmPostgresDriver$.html#DDLextendsSqlProfile.this.SchemaDescriptionDef" class="extmbr" name="utils.db.SmPostgresDriver.DDL">utils.db.SmPostgresDriver.DDL</a></span>
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Tables.html" class="extype" name="models.db.Tables">Tables</a></dd><dt>Annotations</dt><dd>
