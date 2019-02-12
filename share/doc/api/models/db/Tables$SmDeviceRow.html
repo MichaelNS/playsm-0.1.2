@@ -172,12 +172,13 @@
         <span class="kind">case class</span>
       </span>
       <span class="symbol">
-        <span class="name">SmDeviceRow</span><span class="params">(<span name="id">id: <span class="extype" name="scala.Int">Int</span></span>, <span name="name">name: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="label">label: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="uid">uid: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="syncDate">syncDate: <span class="extype" name="java.time.LocalDateTime">LocalDateTime</span></span>, <span name="describe">describe: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>] = <span class="symbol">None</span></span>, <span name="visible">visible: <span class="extype" name="scala.Boolean">Boolean</span> = <span class="symbol">true</span></span>)</span><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+        <span class="name">SmDeviceRow</span><span class="params">(<span name="id">id: <span class="extype" name="scala.Int">Int</span></span>, <span name="name">name: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="label">label: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="uid">uid: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="syncDate">syncDate: <span class="extype" name="java.time.LocalDateTime">LocalDateTime</span></span>, <span name="describe">describe: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>] = <span class="symbol">None</span></span>, <span name="visible">visible: <span class="extype" name="scala.Boolean">Boolean</span> = <span class="symbol">true</span></span>, <span name="reliable">reliable: <span class="extype" name="scala.Boolean">Boolean</span> = <span class="symbol">true</span></span>)</span><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
       </span>
       </h4>
 
       
-          <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>Entity class storing rows of table SmDevice</p></div><dl class="paramcmts block"><dt class="param">id</dt><dd class="cmt"><p>Database column ID SqlType(serial), AutoInc, PrimaryKey</p></dd><dt class="param">name</dt><dd class="cmt"><p>Database column NAME SqlType(varchar)</p></dd><dt class="param">label</dt><dd class="cmt"><p>Database column LABEL SqlType(varchar)</p></dd><dt class="param">uid</dt><dd class="cmt"><p>Database column UID SqlType(varchar)</p></dd><dt class="param">syncDate</dt><dd class="cmt"><p>Database column SYNC_DATE SqlType(timestamp)</p></dd><dt class="param">describe</dt><dd class="cmt"><p>Database column DESCRIBE SqlType(varchar), Default(None)</p></dd><dt class="param">visible</dt><dd class="cmt"><p>Database column VISIBLE SqlType(bool), Default(true)</p></dd></dl><div class="toggleContainer block">
+          <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>Entity class storing rows of table SmDevice
+</p></div><dl class="paramcmts block"><dt class="param">id</dt><dd class="cmt"><p>Database column ID SqlType(serial), AutoInc, PrimaryKey</p></dd><dt class="param">name</dt><dd class="cmt"><p>Database column NAME SqlType(varchar)</p></dd><dt class="param">label</dt><dd class="cmt"><p>Database column LABEL SqlType(varchar)</p></dd><dt class="param">uid</dt><dd class="cmt"><p>Database column UID SqlType(varchar)</p></dd><dt class="param">syncDate</dt><dd class="cmt"><p>Database column SYNC_DATE SqlType(timestamp)</p></dd><dt class="param">describe</dt><dd class="cmt"><p>Database column DESCRIBE SqlType(varchar), Default(None)</p></dd><dt class="param">visible</dt><dd class="cmt"><p>Database column VISIBLE SqlType(bool), Default(true)</p></dd><dt class="param">reliable</dt><dd class="cmt"><p>Database column RELIABLE SqlType(bool), Default(true)</p></dd></dl><div class="toggleContainer block">
           <span class="toggle">
             Linear Supertypes
           </span>
@@ -228,9 +229,9 @@
         <div id="constructors" class="members">
               <h3>Instance Constructors</h3>
               <ol><li name="models.db.Tables.SmDeviceRow#&lt;init&gt;" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="&lt;init&gt;(id:Int,name:String,label:String,uid:String,syncDate:java.time.LocalDateTime,describe:Option[String],visible:Boolean):Tables.this.SmDeviceRow"></a><a id="&lt;init&gt;:SmDeviceRow"></a>
+      <a id="&lt;init&gt;(id:Int,name:String,label:String,uid:String,syncDate:java.time.LocalDateTime,describe:Option[String],visible:Boolean,reliable:Boolean):Tables.this.SmDeviceRow"></a><a id="&lt;init&gt;:SmDeviceRow"></a>
       <span class="permalink">
-      <a href="../../models/db/Tables$SmDeviceRow.html#&lt;init&gt;(id:Int,name:String,label:String,uid:String,syncDate:java.time.LocalDateTime,describe:Option[String],visible:Boolean):Tables.this.SmDeviceRow" title="Permalink">
+      <a href="../../models/db/Tables$SmDeviceRow.html#&lt;init&gt;(id:Int,name:String,label:String,uid:String,syncDate:java.time.LocalDateTime,describe:Option[String],visible:Boolean,reliable:Boolean):Tables.this.SmDeviceRow" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -239,10 +240,10 @@
         <span class="kind">new</span>
       </span>
       <span class="symbol">
-        <span class="name">SmDeviceRow</span><span class="params">(<span name="id">id: <span class="extype" name="scala.Int">Int</span></span>, <span name="name">name: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="label">label: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="uid">uid: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="syncDate">syncDate: <span class="extype" name="java.time.LocalDateTime">LocalDateTime</span></span>, <span name="describe">describe: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>] = <span class="symbol">None</span></span>, <span name="visible">visible: <span class="extype" name="scala.Boolean">Boolean</span> = <span class="symbol">true</span></span>)</span>
+        <span class="name">SmDeviceRow</span><span class="params">(<span name="id">id: <span class="extype" name="scala.Int">Int</span></span>, <span name="name">name: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="label">label: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="uid">uid: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="syncDate">syncDate: <span class="extype" name="java.time.LocalDateTime">LocalDateTime</span></span>, <span name="describe">describe: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>] = <span class="symbol">None</span></span>, <span name="visible">visible: <span class="extype" name="scala.Boolean">Boolean</span> = <span class="symbol">true</span></span>, <span name="reliable">reliable: <span class="extype" name="scala.Boolean">Boolean</span> = <span class="symbol">true</span></span>)</span>
       </span>
       
-      <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"></div><dl class="paramcmts block"><dt class="param">id</dt><dd class="cmt"><p>Database column ID SqlType(serial), AutoInc, PrimaryKey</p></dd><dt class="param">name</dt><dd class="cmt"><p>Database column NAME SqlType(varchar)</p></dd><dt class="param">label</dt><dd class="cmt"><p>Database column LABEL SqlType(varchar)</p></dd><dt class="param">uid</dt><dd class="cmt"><p>Database column UID SqlType(varchar)</p></dd><dt class="param">syncDate</dt><dd class="cmt"><p>Database column SYNC_DATE SqlType(timestamp)</p></dd><dt class="param">describe</dt><dd class="cmt"><p>Database column DESCRIBE SqlType(varchar), Default(None)</p></dd><dt class="param">visible</dt><dd class="cmt"><p>Database column VISIBLE SqlType(bool), Default(true)</p></dd></dl></div>
+      <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"></div><dl class="paramcmts block"><dt class="param">id</dt><dd class="cmt"><p>Database column ID SqlType(serial), AutoInc, PrimaryKey</p></dd><dt class="param">name</dt><dd class="cmt"><p>Database column NAME SqlType(varchar)</p></dd><dt class="param">label</dt><dd class="cmt"><p>Database column LABEL SqlType(varchar)</p></dd><dt class="param">uid</dt><dd class="cmt"><p>Database column UID SqlType(varchar)</p></dd><dt class="param">syncDate</dt><dd class="cmt"><p>Database column SYNC_DATE SqlType(timestamp)</p></dd><dt class="param">describe</dt><dd class="cmt"><p>Database column DESCRIBE SqlType(varchar), Default(None)</p></dd><dt class="param">visible</dt><dd class="cmt"><p>Database column VISIBLE SqlType(bool), Default(true)</p></dd><dt class="param">reliable</dt><dd class="cmt"><p>Database column RELIABLE SqlType(bool), Default(true)</p></dd></dl></div>
     </li></ol>
             </div>
 
@@ -532,6 +533,22 @@
                 <span class="name">@native</span><span class="args">()</span>
               
         </dd></dl></div>
+    </li><li name="models.db.Tables.SmDeviceRow#reliable" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="reliable:Boolean"></a>
+      <span class="permalink">
+      <a href="../../models/db/Tables$SmDeviceRow.html#reliable:Boolean" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">reliable</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      
+      
     </li><li name="models.db.Tables.SmDeviceRow#syncDate" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="syncDate:java.time.LocalDateTime"></a><a id="syncDate:LocalDateTime"></a>
       <span class="permalink">

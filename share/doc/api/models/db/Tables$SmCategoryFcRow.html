@@ -172,13 +172,13 @@
         <span class="kind">case class</span>
       </span>
       <span class="symbol">
-        <span class="name">SmCategoryFcRow</span><span class="params">(<span name="id">id: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="fName">fName: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="categoryType">categoryType: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>] = <span class="symbol">None</span></span>, <span name="description">description: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>] = <span class="symbol">None</span></span>)</span><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+        <span class="name">SmCategoryFcRow</span><span class="params">(<span name="id">id: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="fName">fName: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="categoryType">categoryType: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>] = <span class="symbol">None</span></span>, <span name="subCategoryType">subCategoryType: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>] = <span class="symbol">None</span></span>, <span name="description">description: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>] = <span class="symbol">None</span></span>)</span><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
       </span>
       </h4>
 
       
           <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>Entity class storing rows of table SmCategoryFc
-</p></div><dl class="paramcmts block"><dt class="param">id</dt><dd class="cmt"><p>Database column ID SqlType(varchar)</p></dd><dt class="param">fName</dt><dd class="cmt"><p>Database column F_NAME SqlType(varchar)</p></dd><dt class="param">categoryType</dt><dd class="cmt"><p>Database column CATEGORY_TYPE SqlType(varchar), Default(None)</p></dd><dt class="param">description</dt><dd class="cmt"><p>Database column DESCRIPTION SqlType(varchar), Default(None)</p></dd></dl><div class="toggleContainer block">
+</p></div><dl class="paramcmts block"><dt class="param">id</dt><dd class="cmt"><p>Database column ID SqlType(varchar)</p></dd><dt class="param">fName</dt><dd class="cmt"><p>Database column F_NAME SqlType(varchar)</p></dd><dt class="param">categoryType</dt><dd class="cmt"><p>Database column CATEGORY_TYPE SqlType(varchar), Default(None)</p></dd><dt class="param">subCategoryType</dt><dd class="cmt"><p>Database column SUB_CATEGORY_TYPE SqlType(varchar), Default(None)</p></dd><dt class="param">description</dt><dd class="cmt"><p>Database column DESCRIPTION SqlType(varchar), Default(None)</p></dd></dl><div class="toggleContainer block">
           <span class="toggle">
             Linear Supertypes
           </span>
@@ -229,9 +229,9 @@
         <div id="constructors" class="members">
               <h3>Instance Constructors</h3>
               <ol><li name="models.db.Tables.SmCategoryFcRow#&lt;init&gt;" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="&lt;init&gt;(id:String,fName:String,categoryType:Option[String],description:Option[String]):Tables.this.SmCategoryFcRow"></a><a id="&lt;init&gt;:SmCategoryFcRow"></a>
+      <a id="&lt;init&gt;(id:String,fName:String,categoryType:Option[String],subCategoryType:Option[String],description:Option[String]):Tables.this.SmCategoryFcRow"></a><a id="&lt;init&gt;:SmCategoryFcRow"></a>
       <span class="permalink">
-      <a href="../../models/db/Tables$SmCategoryFcRow.html#&lt;init&gt;(id:String,fName:String,categoryType:Option[String],description:Option[String]):Tables.this.SmCategoryFcRow" title="Permalink">
+      <a href="../../models/db/Tables$SmCategoryFcRow.html#&lt;init&gt;(id:String,fName:String,categoryType:Option[String],subCategoryType:Option[String],description:Option[String]):Tables.this.SmCategoryFcRow" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -240,10 +240,10 @@
         <span class="kind">new</span>
       </span>
       <span class="symbol">
-        <span class="name">SmCategoryFcRow</span><span class="params">(<span name="id">id: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="fName">fName: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="categoryType">categoryType: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>] = <span class="symbol">None</span></span>, <span name="description">description: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>] = <span class="symbol">None</span></span>)</span>
+        <span class="name">SmCategoryFcRow</span><span class="params">(<span name="id">id: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="fName">fName: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="categoryType">categoryType: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>] = <span class="symbol">None</span></span>, <span name="subCategoryType">subCategoryType: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>] = <span class="symbol">None</span></span>, <span name="description">description: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>] = <span class="symbol">None</span></span>)</span>
       </span>
       
-      <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"></div><dl class="paramcmts block"><dt class="param">id</dt><dd class="cmt"><p>Database column ID SqlType(varchar)</p></dd><dt class="param">fName</dt><dd class="cmt"><p>Database column F_NAME SqlType(varchar)</p></dd><dt class="param">categoryType</dt><dd class="cmt"><p>Database column CATEGORY_TYPE SqlType(varchar), Default(None)</p></dd><dt class="param">description</dt><dd class="cmt"><p>Database column DESCRIPTION SqlType(varchar), Default(None)</p></dd></dl></div>
+      <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"></div><dl class="paramcmts block"><dt class="param">id</dt><dd class="cmt"><p>Database column ID SqlType(varchar)</p></dd><dt class="param">fName</dt><dd class="cmt"><p>Database column F_NAME SqlType(varchar)</p></dd><dt class="param">categoryType</dt><dd class="cmt"><p>Database column CATEGORY_TYPE SqlType(varchar), Default(None)</p></dd><dt class="param">subCategoryType</dt><dd class="cmt"><p>Database column SUB_CATEGORY_TYPE SqlType(varchar), Default(None)</p></dd><dt class="param">description</dt><dd class="cmt"><p>Database column DESCRIPTION SqlType(varchar), Default(None)</p></dd></dl></div>
     </li></ol>
             </div>
 
@@ -533,6 +533,22 @@
                 <span class="name">@native</span><span class="args">()</span>
               
         </dd></dl></div>
+    </li><li name="models.db.Tables.SmCategoryFcRow#subCategoryType" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="subCategoryType:Option[String]"></a>
+      <span class="permalink">
+      <a href="../../models/db/Tables$SmCategoryFcRow.html#subCategoryType:Option[String]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">subCategoryType</span><span class="result">: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>
+      </span>
+      
+      
     </li><li name="scala.AnyRef#synchronized" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="synchronized[T0](x$1:=&gt;T0):T0"></a><a id="synchronized[T0](⇒T0):T0"></a>
       <span class="permalink">

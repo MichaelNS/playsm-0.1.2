@@ -3695,6 +3695,26 @@
                 <span class="name">@native</span><span class="args">()</span>
               
         </dd></dl></div>
+    </li><li name="controllers.SmView#getFilesByNaturalKey" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="getFilesByNaturalKey(deviceUid:String,path:String,fName:String):scala.concurrent.Future[List[(String,String,String,Option[String])]]"></a><a id="getFilesByNaturalKey(String,String,String):Future[List[(String,String,String,Option[String])]]"></a>
+      <span class="permalink">
+      <a href="../controllers/SmView.html#getFilesByNaturalKey(deviceUid:String,path:String,fName:String):scala.concurrent.Future[List[(String,String,String,Option[String])]]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getFilesByNaturalKey</span><span class="params">(<span name="deviceUid">deviceUid: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="path">path: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="fName">fName: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <span class="extype" name="scala.concurrent.Future">Future</span>[<span class="extype" name="scala.List">List</span>[(<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>])]]</span>
+      </span>
+      
+      <p class="shortcomment cmt">get files by NaturalKey
+used <a href="#viewFile(sha256:Option[String]):play.api.mvc.Action[play.api.mvc.AnyContent]" class="extmbr" name="controllers.SmView#viewFile">SmView.viewFile</a>
+</p><div class="fullcomment"><div class="comment cmt"><p>get files by NaturalKey
+used <a href="#viewFile(sha256:Option[String]):play.api.mvc.Action[play.api.mvc.AnyContent]" class="extmbr" name="controllers.SmView#viewFile">SmView.viewFile</a>
+</p></div><dl class="paramcmts block"><dt class="param">deviceUid</dt><dd class="cmt"><p>deviceUid</p></dd><dt class="param">path</dt><dd class="cmt"><p>path</p></dd><dt class="param">fName</dt><dd class="cmt"><p>fName</p></dd><dt>returns</dt><dd class="cmt"><p>list files</p></dd></dl></div>
     </li><li name="controllers.SmView#getFilesFromSha256" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="getFilesFromSha256(sha256:Option[String]):scala.concurrent.Future[List[(String,String,String,Option[String])]]"></a><a id="getFilesFromSha256(Option[String]):Future[List[(String,String,String,Option[String])]]"></a>
       <span class="permalink">
@@ -3984,6 +4004,22 @@ used <a href="#viewFile(sha256:Option[String]):play.api.mvc.Action[play.api.mvc.
       </span>
       <span class="symbol">
         <span class="name">viewFile</span><span class="params">(<span name="sha256">sha256: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>)</span><span class="result">: <span class="extype" name="play.api.mvc.Action">Action</span>[<span class="extype" name="play.api.mvc.AnyContent">AnyContent</span>]</span>
+      </span>
+      
+      
+    </li><li name="controllers.SmView#viewFileByNaturalKey" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="viewFileByNaturalKey(deviceUid:String,path:String,fName:String):play.api.mvc.Action[play.api.mvc.AnyContent]"></a><a id="viewFileByNaturalKey(String,String,String):Action[AnyContent]"></a>
+      <span class="permalink">
+      <a href="../controllers/SmView.html#viewFileByNaturalKey(deviceUid:String,path:String,fName:String):play.api.mvc.Action[play.api.mvc.AnyContent]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">viewFileByNaturalKey</span><span class="params">(<span name="deviceUid">deviceUid: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="path">path: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="fName">fName: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <span class="extype" name="play.api.mvc.Action">Action</span>[<span class="extype" name="play.api.mvc.AnyContent">AnyContent</span>]</span>
       </span>
       
       
